@@ -6017,7 +6017,7 @@
 						},
 						{
 							"key": "client_id",
-							"value": "nit-medhub",
+							"value": "{{client_id}}",
 							"type": "text"
 						},
 						{
@@ -6032,7 +6032,7 @@
 						},
 						{
 							"key": "client_secret",
-							"value": "nit-medhub-secret-2024",
+							"value": "{{client_secret}}",
 							"type": "text"
 						}
 					]
