@@ -6012,7 +6012,7 @@
 					"urlencoded": [
 						{
 							"key": "grant_type",
-							"value": "password",
+							"value": "{{grant_type}}",
 							"type": "text"
 						},
 						{
