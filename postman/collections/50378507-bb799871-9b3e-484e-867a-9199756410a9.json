@@ -1,0 +1,6276 @@
+{
+	"info": {
+		"_postman_id": "50378507-bb799871-9b3e-484e-867a-9199756410a9",
+		"name": "medhub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "gt",
+			"item": [
+				{
+					"name": "class",
+					"item": [
+						{
+							"name": "class",
+							"id": "50378507-886bdf29-1414-4192-9e22-a26af51bdfd9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/core/course_class/d1114932-188b-45cc-9b47-1219cb507cb3/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"core",
+										"course_class",
+										"d1114932-188b-45cc-9b47-1219cb507cb3",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "class",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = pm.response.json();\r",
+											"pm.collectionVariables.set(\"P1\", data.id)"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {},
+										"id": "05935b2e-92a4-4f4f-92da-904d4e1c8817"
+									}
+								}
+							],
+							"id": "50378507-0daa880a-01da-438e-913a-9487922e0997",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "periodo",
+											"value": "13",
+											"type": "text"
+										},
+										{
+											"key": "semester",
+											"value": "2025.1",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "{{$randomLoremSentence}}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/core/course_class/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"core",
+										"course_class",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Classes",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "05935b2e-92a4-4f4f-92da-904d4e1c8817",
+										"exec": [
+											"var data = pm.response.json();\r",
+											"pm.collectionVariables.set(\"P1\", data.id)"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"id": "50378507-db071472-cefc-403f-9ea7-d2f26573c5d8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/core/course_class/create-classes/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"core",
+										"course_class",
+										"create-classes",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "class",
+							"id": "50378507-18a3f1e0-ab36-4131-a783-2b655edcd0ad",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN3}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "periodo",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "semester",
+											"value": "2025.2",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "string",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/core/course_class/d51540f4-5ad5-4092-b886-0a7a22ef0ab2/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"core",
+										"course_class",
+										"d51540f4-5ad5-4092-b886-0a7a22ef0ab2",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-1c7a05ff-3bfb-4e4d-a97f-f8ca1881bcfd"
+				},
+				{
+					"name": "email",
+					"item": [
+						{
+							"name": "notification",
+							"id": "50378507-bfb34502-0f8c-43b6-a1a5-918541d17cfa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"to_email\": [\"xxxxxdanielzimmxxxx.danieldant@gmail.com\"], \r\n    \"assunto\": \"Notas do GT no sistema\", \r\n    \"nome\": \"Daniel Dantas\", \r\n    \"mensagem\": \"As notas da sessão AV-2 já estão disponíveis\", \r\n    \"informacoes_adicionais\": \"Faça login no sistema para visualizar suas notas\", \r\n    \"link\": \"http://localhost:3000/\", \r\n    \"texto_botao\": \"Ir para o medhub\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/common/notifications/send-notification/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"common",
+										"notifications",
+										"send-notification",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "send_welcome",
+							"id": "50378507-889265df-65d4-4eed-9ee7-bcaf811e437e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"to_email\": \"xxxxxdanielzimmxxxx.danieldant@gmail.com\", \r\n \"nome\": \"Daniel Dantas\" \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/common/notifications/send-welcome/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"common",
+										"notifications",
+										"send-welcome",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-63c65eca-820e-4e1a-bf06-a0912f31b025"
+				},
+				{
+					"name": "evaluation",
+					"item": [
+						{
+							"name": "evaluation",
+							"id": "50378507-c45bcc1e-17ec-4021-acbf-c277e885e669",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_tutorial_session/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"evaluation_tutorial_session",
+										""
+									],
+									"query": [
+										{
+											"key": "student_attendance_session",
+											"value": "76ef3770-3b11-4349-82a6-fc7868875ae",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "evaluation",
+							"id": "50378507-bab575ed-bede-4a57-93d6-a155f2c3e522",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"student\": \"\",\r\n    \"tutorial_group\": \"\",\r\n    \"student_attendance_session\": \"\",\r\n    \"tutorial_session\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_tutorial_session/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"evaluation_tutorial_session",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "evaluation",
+							"id": "50378507-b1b3b9e1-9757-468a-9ef4-e8da1b836328",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"note_conceptual_map\": 9\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_tutorial_session/{{EVALUATION_ID}}/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"evaluation_tutorial_session",
+										"{{EVALUATION_ID}}",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-7cced15c-2a13-4cb1-93a8-b9a95eaf42dc"
+				},
+				{
+					"name": "evaluation steps",
+					"item": [
+						{
+							"name": "evaluation steps",
+							"id": "50378507-8d65746c-e546-454c-a934-3c427b7beaca",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"is_present\": true\r\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_steps/?page=1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"evaluation_steps",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "evaluation steps",
+							"id": "50378507-d77ef724-ceca-4d6f-a287-42c6e7ac70fb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"evaluation\": \"0eaacec8-19f6-4150-a926-a335fa2abcef\",\r\n  \"step_number\": 5,\r\n  \"student_time_step\": \"4\",\r\n  \"time_step\": \"4\",\r\n  \"clicks_warning\": 0,\r\n  \"clicks_dislike\": 0,\r\n  \"clicks_like\": 0,\r\n  \"clicks_heart\": 0,\r\n  \"clicks_star\": 3,\r\n  \"clicks_sun\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_steps/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"evaluation_steps",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "evaluation steps",
+							"id": "50378507-50d25624-ed96-466d-8662-29b1ab65a29e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"student_time_step\": \"00:00:25\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_steps/0db93a4e-7326-4f17-bf53-69c3ad65c038/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"evaluation_steps",
+										"0db93a4e-7326-4f17-bf53-69c3ad65c038",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "batch create",
+							"id": "50378507-a5e25804-46a0-4197-a76c-4a14dd27dd48",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"evaluation\": \"f1ba5360-b820-4e33-9707-ab5fad5a0d4a\",\r\n        \"step_number\": 5,\r\n        \"student_time_step\": \"12\",\r\n        \"time_step\": \"12\",\r\n        \"clicks_warning\": 1,\r\n        \"clicks_dislike\": 0,\r\n        \"clicks_like\": 2,\r\n        \"clicks_heart\": 1,\r\n        \"clicks_star\": 6,\r\n        \"clicks_sun\": 2\r\n    },\r\n    {\r\n        \"evaluation\": \"d07bdd9d-3d90-4883-b5b8-1a9c06c91fc3\",\r\n        \"step_number\": 5,\r\n        \"student_time_step\": \"5\",\r\n        \"time_step\": \"5\",\r\n        \"clicks_warning\": 0,\r\n        \"clicks_dislike\": 2,\r\n        \"clicks_like\": 5,\r\n        \"clicks_heart\": 4,\r\n        \"clicks_star\": 3,\r\n        \"clicks_sun\": 12\r\n    },\r\n    {\r\n        \"evaluation\": \"ee4c2623-682f-45bd-a029-6f3c5467710c\",\r\n        \"step_number\": 5,\r\n        \"student_time_step\": \"4\",\r\n        \"time_step\": \"4\",\r\n        \"clicks_warning\": 0,\r\n        \"clicks_dislike\": 4,\r\n        \"clicks_like\": 1,\r\n        \"clicks_heart\": 7,\r\n        \"clicks_star\": 3,\r\n        \"clicks_sun\": 8\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_steps/batch-create/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"evaluation_steps",
+										"batch-create",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-c70afa06-4a48-4960-8931-7f0f7fabd083"
+				},
+				{
+					"name": "facilitator",
+					"item": [
+						{
+							"name": "facilitator",
+							"id": "50378507-709c7aaa-12ea-4fe8-a557-ec9e4b32323d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/user/facilitator/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"user",
+										"facilitator",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "facilitator",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = pm.response.json();\r",
+											"pm.collectionVariables.set(\"FACILITADOR\", data.id)"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {},
+										"id": "50d240ad-2d59-4b19-8ae4-782453cbeb44"
+									}
+								}
+							],
+							"id": "50378507-489b32e5-93ee-49d3-ae43-4740821c10d9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "user",
+											"value": "{{FACILITADOR}}",
+											"type": "text"
+										},
+										{
+											"key": "registration",
+											"value": "123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/user/facilitator/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"user",
+										"facilitator",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "facilitator",
+							"id": "50378507-94cbbd23-75a7-4730-98a4-d6c5211f3ee4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "user",
+											"value": "{{USER_FAC}}",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "registration",
+											"value": "1140",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/user/facilitator/a024f5d1-5523-4112-ae27-2d88dfc50ddc/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"user",
+										"facilitator",
+										"a024f5d1-5523-4112-ae27-2d88dfc50ddc",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-b18d717a-6c14-4a63-8f68-760f90e49a05"
+				},
+				{
+					"name": "institutional register",
+					"item": [
+						{
+							"name": "institutional register",
+							"id": "50378507-b7f88873-257c-434c-9be7-92907a1f553a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/core/institutional_register",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"core",
+										"institutional_register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "institutional register",
+							"id": "50378507-ceac8972-6424-42e1-a40c-2c6729b0ad98",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "student",
+											"value": "{{ALUNO1}}",
+											"type": "text"
+										},
+										{
+											"key": "course_class",
+											"value": "{{P1}}",
+											"type": "text"
+										},
+										{
+											"key": "register_date",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "active",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/core/institutional_register/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"core",
+										"institutional_register",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-80f0a18d-4d6b-434c-89e6-f810591b7d80"
+				},
+				{
+					"name": "individual study",
+					"item": [
+						{
+							"name": "individual study",
+							"id": "50378507-4924210e-2edf-4cdd-b136-36419a3d3631",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "periodo",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "semester",
+											"value": "2025.1",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "{{$randomLoremSentence}}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/individual_study/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"individual_study",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "individual study Copy",
+							"id": "50378507-ae2f146c-1ed6-4359-84f6-c0eb4686722a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/individual_study/{{INDIVIDUAL_STUDY_ID}}",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"individual_study",
+										"{{INDIVIDUAL_STUDY_ID}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "individual study",
+							"id": "50378507-0e82955b-6a1f-4801-9659-9b27587f53fd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "student",
+											"value": "ac612a88-34e2-41da-b606-9ed4c38c0937",
+											"type": "text"
+										},
+										{
+											"key": "session_report",
+											"value": "4817471f-4bf4-4082-9b22-c38ad7ae9b23",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/individual_study/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"individual_study",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-545038f6-6a24-44f9-8522-027dddde6718"
+				},
+				{
+					"name": "learning objective",
+					"item": [
+						{
+							"name": "learning objective",
+							"id": "50378507-d7f25beb-e252-41fb-8f58-54e8818b06b1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/common/learning_objective",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"common",
+										"learning_objective"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "learning objective",
+							"id": "50378507-5aefbd0c-cecb-485a-90f2-75ee0251d10e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "verb",
+											"value": "teste",
+											"type": "text"
+										},
+										{
+											"key": "level",
+											"value": "COMPREENDER",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "teste relato e o outro la q esqueci o nome nesse momento",
+											"type": "text"
+										},
+										{
+											"key": "problem_situations",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "session_report",
+											"value": "9702a486-82c1-4250-9410-134eb33cc15f",
+											"type": "text"
+										},
+										{
+											"key": "individual_study",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/common/learning_objective/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"common",
+										"learning_objective",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-cfc00b11-fe28-42c3-be23-15d52036a9e4"
+				},
+				{
+					"name": "Problem Situation",
+					"item": [
+						{
+							"name": "problem situation",
+							"id": "50378507-e801e97a-8975-48f9-97d5-091ba0ed2ff3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/problem_situation/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"problem_situation",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "problem situation",
+							"id": "50378507-b4f71a34-8a1d-4540-a863-364138316f14",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "course_class",
+											"value": "{{P1}}",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "teste",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "teste de criação da SP",
+											"type": "text"
+										},
+										{
+											"key": "key_word_1",
+											"value": "teste",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "key_word_2",
+											"value": "teste 1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "key_word_3",
+											"value": "teste 2",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "course_class",
+											"value": "459f4d84-76df-418b-819d-93e83e5fb8b3",
+											"type": "text",
+											"uuid": "55d87f9f-05a7-47ec-8ab1-2580ae2f1420"
+										},
+										{
+											"key": "unknown_terms",
+											"value": "termo1, termo2, termo3",
+											"type": "text",
+											"uuid": "af2e0917-19e5-4705-8991-762914f8e90d"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/problem_situation/8ace1421-e13a-4db8-a949-8438b19ca130/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"problem_situation",
+										"8ace1421-e13a-4db8-a949-8438b19ca130",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "problem situation",
+							"id": "50378507-6f4e072b-9812-4c44-9306-c5c058f6651f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "course_class",
+											"value": "{{P1}}",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "teste",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "teste de criação da SP",
+											"type": "text"
+										},
+										{
+											"key": "key_word_1",
+											"value": "teste",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "key_word_2",
+											"value": "teste 1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "key_word_3",
+											"value": "teste 2",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "course_class",
+											"value": "459f4d84-76df-418b-819d-93e83e5fb8b3",
+											"type": "text",
+											"uuid": "55d87f9f-05a7-47ec-8ab1-2580ae2f1420"
+										},
+										{
+											"key": "unknown_terms",
+											"value": "termo1",
+											"type": "text",
+											"uuid": "af2e0917-19e5-4705-8991-762914f8e90d"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/problem_situation/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"problem_situation",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-4613ecef-50a1-4a7e-93da-1b7dede24d72"
+				},
+				{
+					"name": "reports",
+					"item": [
+						{
+							"name": "student",
+							"item": [
+								{
+									"name": "student-grade-report",
+									"id": "50378507-ef6fbf56-39e2-4872-bbb8-fe48ef43139a",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/?student=3364390f-7082-4776-a6ae-a294a8dbafc1&course_class=532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"gt",
+												"core",
+												"reports",
+												"student_grade_report",
+												""
+											],
+											"query": [
+												{
+													"key": "note",
+													"value": "third",
+													"description": "first, second e third são opções",
+													"disabled": true
+												},
+												{
+													"key": "student",
+													"value": "3364390f-7082-4776-a6ae-a294a8dbafc1"
+												},
+												{
+													"key": "course_class",
+													"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"disabled": true
+												},
+												{
+													"key": "course_class",
+													"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "student-grade-report PDF",
+									"id": "50378507-5e0f0c17-e731-49c8-887d-1cb6531f714b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/pdf/?course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"gt",
+												"core",
+												"reports",
+												"student_grade_report",
+												"pdf",
+												""
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "note",
+													"value": "first",
+													"description": "first, second e third são opções",
+													"disabled": true
+												},
+												{
+													"key": "course_class",
+													"value": "d1114932-188b-45cc-9b47-1219cb507cb3",
+													"description": "campo obrigatório",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "semester",
+													"value": "2026.1",
+													"disabled": true
+												},
+												{
+													"key": "course_class",
+													"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "student-grade-report XLSX",
+									"id": "50378507-82754c29-b9f7-4fe3-a209-48b4fb9e8d58",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/xlsx/?semester=2026.1&course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"gt",
+												"core",
+												"reports",
+												"student_grade_report",
+												"xlsx",
+												""
+											],
+											"query": [
+												{
+													"key": "semester",
+													"value": "2026.1"
+												},
+												{
+													"key": "page",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "note",
+													"value": "first",
+													"description": "first, second e third são opções",
+													"disabled": true
+												},
+												{
+													"key": "course_class",
+													"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"description": "campo obrigatório"
+												},
+												{
+													"key": "course_class",
+													"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+													"description": "campo obrigatório",
+													"disabled": true
+												},
+												{
+													"key": "course_class",
+													"value": "d1114932-188b-45cc-9b47-1219cb507cb3",
+													"description": "campo obrigatório",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "student-grade-report CSV",
+									"id": "50378507-cd7d3b43-1646-4a03-9d0b-79e74427bade",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/csv/?semester=2026.1&course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"gt",
+												"core",
+												"reports",
+												"student_grade_report",
+												"csv",
+												""
+											],
+											"query": [
+												{
+													"key": "semester",
+													"value": "2026.1"
+												},
+												{
+													"key": "page",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "note",
+													"value": "first",
+													"description": "first, second e third são opções",
+													"disabled": true
+												},
+												{
+													"key": "course_class",
+													"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"description": "campo obrigatório"
+												},
+												{
+													"key": "course_class",
+													"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+													"description": "campo obrigatório",
+													"disabled": true
+												},
+												{
+													"key": "course_class",
+													"value": "d1114932-188b-45cc-9b47-1219cb507cb3",
+													"description": "campo obrigatório",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "50378507-a1ad8589-ac82-410f-bcf3-43f167cc8c9a"
+						}
+					],
+					"id": "50378507-d7074d79-4ab1-4f20-b847-d436e557c417"
+				},
+				{
+					"name": "session report",
+					"item": [
+						{
+							"name": "session report",
+							"id": "50378507-08bdd49d-8168-41df-8176-5add4bd5dc0c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "tutorial_session",
+											"value": "6360b1ec-3a9a-4098-b596-98b93d585b50",
+											"type": "text"
+										},
+										{
+											"key": "tutorial_group",
+											"value": "75914a52-2961-4395-a924-568352659d97",
+											"type": "text"
+										},
+										{
+											"key": "rapporteur",
+											"value": "d9d8ec23-13ed-4d90-a425-76fb71147f7f",
+											"type": "text"
+										},
+										{
+											"key": "coordenator",
+											"value": "0d4619a8-2462-419b-b9af-1625f699142f",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/session_report/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"session_report",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "session report",
+							"id": "50378507-a5cce329-5625-450e-a899-5713488db975",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/session_report/?page=1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"session_report",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "session_report",
+											"value": "693110a9-ecbc-4778-b805-be48d6ded943",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "session report",
+							"id": "50378507-5ec47a2c-af94-4664-82e4-b9a3dcd39269",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "rapporteur",
+											"value": "18ef057f-c8f0-49b0-afa4-d3c12c712c4c",
+											"type": "text",
+											"uuid": "4165da73-8cb1-426a-9897-26667c164bde",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/session_report/0a4d7d05-9bc5-4896-8c79-4fa5e3c73686/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"session_report",
+										"0a4d7d05-9bc5-4896-8c79-4fa5e3c73686",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-7c9b9df5-9662-4f44-9a03-f4ca3b89d60c"
+				},
+				{
+					"name": "request replacement",
+					"item": [
+						{
+							"name": "request replacement",
+							"id": "50378507-b1386655-bd9d-47db-ab0b-aeab405ea39d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/request_replacement/?page=1&semester=2026.1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"request_replacement",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "semester",
+											"value": "2026.1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "request replacement",
+							"id": "50378507-26857144-b44d-43e8-9f15-cf170fda03d7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "course_class",
+											"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+											"description": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a ; 532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+											"type": "text",
+											"uuid": "a6d4701b-6d1a-4b6e-a9bf-c829888b6bc6"
+										},
+										{
+											"key": "reason",
+											"value": "health",
+											"type": "text",
+											"uuid": "72f3f86d-c906-48ac-a074-f7698c790452"
+										},
+										{
+											"key": "target_sessions",
+											"value": "AV-11",
+											"type": "text",
+											"uuid": "db6d306f-f48b-4675-9c81-8464e038fef3"
+										},
+										{
+											"key": "target_sessions",
+											"value": "AV-12",
+											"type": "text",
+											"uuid": "a1b88ab0-aecc-49ce-b398-29590233dac9",
+											"disabled": true
+										},
+										{
+											"key": "target_sessions",
+											"value": "AV-9",
+											"type": "text",
+											"uuid": "5d4fe374-9cdd-4380-8bf7-661c24e86899",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "Assim mesmo, a complexidade dos estudos efetuados estimula a padronização do remanejamento dos quadros funcionais. Todavia, o fenômeno da Internet obstaculiza a apreciação da importância do investimento em reciclagem técnica. A prática cotidiana prova que a adoção de políticas descentralizadoras talvez venha a ressaltar a relatividade dos níveis de motivação departamental.",
+											"type": "text",
+											"uuid": "9b28d223-4dfc-47b4-8e46-746c4e153c7b"
+										},
+										{
+											"key": "is_information_true",
+											"value": "true",
+											"type": "text",
+											"uuid": "43dd8047-bf13-4466-83c3-df60044f1825"
+										},
+										{
+											"key": "note",
+											"value": "third",
+											"type": "text",
+											"uuid": "4a66543e-1cee-4dc1-bc19-e3bcf32ce493"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/request_replacement/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"request_replacement",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "request replacement",
+							"id": "50378507-0919e762-c7fc-46db-8401-a48d40c4649d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "course_class",
+											"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+											"type": "text",
+											"uuid": "a6d4701b-6d1a-4b6e-a9bf-c829888b6bc6"
+										},
+										{
+											"key": "student",
+											"value": "56744d83-bf45-4540-9dab-12d39877d0fb",
+											"type": "text",
+											"uuid": "d92fa3e4-4041-4cb4-90bd-b800130b42d2"
+										},
+										{
+											"key": "tutorial_session_replacement",
+											"value": "271a2c5d-82c5-4c1e-99e8-463d8b49f894",
+											"type": "text",
+											"uuid": "3ae3e1b0-1843-4e82-ad66-2df5e70716eb"
+										},
+										{
+											"key": "target_session",
+											"value": "AV-2",
+											"type": "text",
+											"uuid": "db6d306f-f48b-4675-9c81-8464e038fef3"
+										},
+										{
+											"key": "reason",
+											"value": "absence",
+											"type": "text",
+											"uuid": "72f3f86d-c906-48ac-a074-f7698c790452"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/request_replacement/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"request_replacement",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-508b9d08-7409-4091-9b0a-3576712099e2"
+				},
+				{
+					"name": "student",
+					"item": [
+						{
+							"name": "student",
+							"id": "50378507-404dd883-c61c-4f3b-aeac-b1c8ed7915b4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/user/student/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"user",
+										"student",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "student",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = pm.response.json();\r",
+											"pm.collectionVariables.set(\"ALUNO1\", data.id)"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {},
+										"id": "4eddeed5-37aa-42ca-9e61-6fb6e54816d5"
+									}
+								}
+							],
+							"id": "50378507-8499b52a-915f-46f1-a113-3dca9338a90d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "user",
+											"value": "{{ALUNO1}}",
+											"type": "text"
+										},
+										{
+											"key": "registration",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/user/student/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"user",
+										"student",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "student",
+							"id": "50378507-11247064-83f2-4199-994f-d89e445f4014",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN3}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "registration",
+											"value": "123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/user/student/0dd44ddb-2b6e-4e24-8bd6-bd2988abdc63/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"user",
+										"student",
+										"0dd44ddb-2b6e-4e24-8bd6-bd2988abdc63",
+										""
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-fef1fca9-a11c-4e8c-add2-d9970a43026f"
+				},
+				{
+					"name": "student_attendance",
+					"item": [
+						{
+							"name": "student_attendance",
+							"id": "50378507-dfea3a08-82eb-4190-9d3c-dc4de06a8449",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/student_attendance_session/?semester=2026.1&page=2&tutorial_group=0a12ec32-f5e1-41f3-8b25-fbbb082b2cd4",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"student_attendance_session",
+										""
+									],
+									"query": [
+										{
+											"key": "semester",
+											"value": "2026.1"
+										},
+										{
+											"key": "page",
+											"value": "2"
+										},
+										{
+											"key": "tutorial_session",
+											"value": "a019dad7-20f9-49ee-a82f-d82b21d1b083",
+											"disabled": true
+										},
+										{
+											"key": "tutorial_group",
+											"value": "0a12ec32-f5e1-41f3-8b25-fbbb082b2cd4",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "most_used_emojis",
+							"id": "50378507-69e5acee-e0b5-419b-8f52-1638228e46ae",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_groups/most-used-emojis/?semester=2026.1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_groups",
+										"most-used-emojis",
+										""
+									],
+									"query": [
+										{
+											"key": "gt_id",
+											"value": "{{GT_NOEXIST}}",
+											"disabled": true
+										},
+										{
+											"key": "gt_id",
+											"value": "{{GT_EXIST}}",
+											"disabled": true
+										},
+										{
+											"key": "periodo",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "semester",
+											"value": "2026.1",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "student_attendance",
+							"id": "50378507-bfe379b4-71dd-488f-a571-cf1103badddb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"student\": \"d9d8ec23-13ed-4d90-a425-76fb71147f7f\",\r\n    \"tutorial_session\": \"6360b1ec-3a9a-4098-b596-98b93d585b50\",\r\n    \"tutorial_group\": \"75914a52-2961-4395-a924-568352659d97\",\r\n    \"is_present\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/student_attendance_session/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"student_attendance_session",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "student_attendance",
+							"id": "50378507-be022aa1-9e84-4c39-b5b1-745288e5a50c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/student_attendance_session/6c40204b-9d35-4ec5-a1e0-e891f414736d/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"student_attendance_session",
+										"6c40204b-9d35-4ec5-a1e0-e891f414736d",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-5cc12fa7-103d-47fa-bf39-efb36c8f2fad"
+				},
+				{
+					"name": "student-gt",
+					"item": [
+						{
+							"name": "student-gt",
+							"id": "50378507-754e8a34-481a-4b5f-b206-164d136c392d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "tutorial_group",
+											"value": "6fce9b49-3433-408f-869f-08db3612757e",
+											"type": "text",
+											"uuid": "06559538-2d49-43ef-97e7-6625e1ccd59c",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"type": "text",
+											"uuid": "170cc4f1-ca6a-4dec-bbba-8a62ddfe3438",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/student_tutorial_groups?student=7d76a3be-bcde-411c-bb59-a14efaa7a752",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"student_tutorial_groups"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "student",
+											"value": "7d76a3be-bcde-411c-bb59-a14efaa7a752"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "student-gt",
+							"id": "50378507-247b59b7-5c05-499d-8309-ba7fff6cb46a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "end_date",
+											"value": "2025-11-24T15:07:18.360966-03:00",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/student_tutorial_groups/e29b190e-6bf0-4c8a-9171-94d97d713e43/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"student_tutorial_groups",
+										"e29b190e-6bf0-4c8a-9171-94d97d713e43",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "student-gt",
+							"id": "50378507-a1112152-74b1-4685-8117-28b8fac89d29",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "student",
+											"value": "{{ALUNO1}}",
+											"type": "text"
+										},
+										{
+											"key": "tutorial_group",
+											"value": "{{GT_ID}}",
+											"type": "text"
+										},
+										{
+											"key": "responsible_facilitator",
+											"value": "{{FACILITADOR}}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/student_tutorial_groups/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"student_tutorial_groups",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-ff962c7e-bbb9-4bc9-8d77-44b45ed50477"
+				},
+				{
+					"name": "tutorial group",
+					"item": [
+						{
+							"name": "tutorial group",
+							"id": "50378507-8ff74436-3fd6-4426-a6df-b13c2b6b9905",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_groups/92bec04f-81d2-46f7-9b78-3c724d305896/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_groups",
+										"92bec04f-81d2-46f7-9b78-3c724d305896",
+										""
+									],
+									"query": [
+										{
+											"key": "course_class",
+											"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+											"disabled": true
+										},
+										{
+											"key": "student",
+											"value": "d9d8ec23-13ed-4d90-a425-76fb71147f7f",
+											"disabled": true
+										},
+										{
+											"key": "responsible_facilitator",
+											"value": "dcd8fb3d-1878-465f-8399-7a42c48d1daa",
+											"disabled": true
+										},
+										{
+											"key": "responsible_facilitator",
+											"value": "2ed93a05-a083-443d-bb30-5e01fe7746a5",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tutorial group",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = pm.response.json();\r",
+											"pm.collectionVariables.set(\"GT_ID\", data.id)\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {},
+										"id": "f7516da1-4e14-4d75-ae25-dfd1c6426a7c"
+									}
+								}
+							],
+							"id": "50378507-d68cb8b1-4e26-418d-ac5e-39e92625ca5a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "number_gt",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "course_class",
+											"value": "{{P1}}",
+											"type": "text"
+										},
+										{
+											"key": "is_replacement",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_groups/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_groups",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tutorial group",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "dbbe71f7-8ce2-414a-8eef-0afc03deac35",
+										"exec": [
+											"var data = pm.response.json();\r",
+											"pm.collectionVariables.set(\"GT_ID\", data.id)\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"id": "50378507-3673cfd5-1212-4495-838b-851dd73192fd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "number_gt",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "course_class",
+											"value": "0cbcfd9f-bdfb-48ad-b5bd-38f9ee2a3435",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "is_replacement",
+											"value": "True",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_groups/d93b2659-3ddc-4246-a6ce-a6f8d37a3fb9/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_groups",
+										"d93b2659-3ddc-4246-a6ce-a6f8d37a3fb9",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "most-used-emojis",
+							"id": "50378507-bc6cff59-78c7-44b0-a659-ced1d363985d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_groups/most-used-emojis/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_groups",
+										"most-used-emojis",
+										""
+									],
+									"query": [
+										{
+											"key": "course_class",
+											"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+											"disabled": true
+										},
+										{
+											"key": "course_class",
+											"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+											"disabled": true
+										},
+										{
+											"key": "periodo",
+											"value": "3",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "gt_id",
+											"value": "92bec04f-81d2-46f7-9b78-3c724d305896",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "send-students-to-back",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f7516da1-4e14-4d75-ae25-dfd1c6426a7c",
+										"exec": [
+											"var data = pm.response.json();\r",
+											"pm.collectionVariables.set(\"GT_ID\", data.id)\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
+							"id": "50378507-e9acb484-a0d7-43a3-9462-3b4f5abe946b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_groups/54e67e0d-1be9-4b30-88fd-6aa7699cf44f/send-student-to-back/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_groups",
+										"54e67e0d-1be9-4b30-88fd-6aa7699cf44f",
+										"send-student-to-back",
+										""
+									],
+									"query": [
+										{
+											"key": "gt-2",
+											"value": "54e67e0d-1be9-4b30-88fd-6aa7699cf44f",
+											"description": "Apenas informativo, não é parâmetro",
+											"disabled": true
+										},
+										{
+											"key": "gt-1",
+											"value": "9adb908c-d3ab-459e-8f1c-5ab4a912a047",
+											"description": "Apenas informativo, não é parâmetro",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-5419e669-2d0d-4c43-a52a-0d0ad8295d03"
+				},
+				{
+					"name": "tutorial session",
+					"item": [
+						{
+							"name": "session tutorial",
+							"id": "50378507-129d294e-bc96-47d4-8b67-180cf325d5ed",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "verb",
+											"value": "verbo teste 2",
+											"type": "text"
+										},
+										{
+											"key": "level",
+											"value": "COMPREENDER",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "criação do verbo para teste",
+											"type": "text"
+										},
+										{
+											"key": "problem_situation",
+											"value": "35247851-b775-4698-83a7-22c7624fd289",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_session",
+										""
+									],
+									"query": [
+										{
+											"key": "session_active",
+											"value": "true",
+											"disabled": true
+										},
+										{
+											"key": "semester",
+											"value": "2026.1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "session tutorial",
+							"id": "50378507-964147dd-f240-4f37-b48b-007001dbf430",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "session_active",
+											"value": "True",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "session_completed",
+											"value": "True",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "session",
+											"value": "AV-2",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session/dc018060-0b5c-47a4-827a-33d700d7cb07/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_session",
+										"dc018060-0b5c-47a4-827a-33d700d7cb07",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "session tutorial",
+							"id": "50378507-e55f3249-9620-41e0-bb4c-1d123ed971f6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "session",
+											"value": "AV-3",
+											"type": "text"
+										},
+										{
+											"key": "course_class",
+											"value": "{{P1}}",
+											"type": "text"
+										},
+										{
+											"key": "problem_situation",
+											"value": "{{PROBLEMA}}",
+											"type": "text"
+										},
+										{
+											"key": "opening_date",
+											"value": "2025-11-10T06:30:00",
+											"type": "text"
+										},
+										{
+											"key": "closing_date",
+											"value": "2025-11-14T17:00:00",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_session",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-8f667103-10c0-41f1-908b-05835832c271"
+				},
+				{
+					"name": "tutorial session assignment",
+					"item": [
+						{
+							"name": "tutorial session assignment",
+							"id": "50378507-eef82f57-be2e-4f68-8924-2d074ef46e14",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/?tutorial_group=92bec04f-81d2-46f7-9b78-3c724d305896",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_session_assignment",
+										""
+									],
+									"query": [
+										{
+											"key": "tutorial_group",
+											"value": "92bec04f-81d2-46f7-9b78-3c724d305896"
+										},
+										{
+											"key": "tutorial_session",
+											"value": "25c8d9e6-e104-4377-b84a-99fd80a34060",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tutorial session assignment",
+							"id": "50378507-fd838359-8b99-4c5f-a57e-9b1fb8b49703",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "tutorial_session",
+											"value": "791c883b-1e40-4f87-94b0-05b9f38c8840",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "tutorial_group",
+											"value": "75114b60-e993-47dc-96fb-07b1b7c6ca95",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "current_stage",
+											"value": "concept_map",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "status_stage",
+											"value": "not_started",
+											"description": "not_started; frequency; summary; in_progress",
+											"type": "text",
+											"uuid": "648cc347-4d5b-41b7-9356-2956b5c1c2e3"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/70b699ab-bed1-49d2-b373-32298f22f884/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_session_assignment",
+										"70b699ab-bed1-49d2-b373-32298f22f884",
+										""
+									],
+									"query": [
+										{
+											"key": "current_stage",
+											"value": "concept_map",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tutorial session assignment",
+							"id": "50378507-d2114d36-5ef3-452d-a720-87dec603041e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"tutorial_session\": \"a963ce04-5af2-479d-8283-fca1be1c2536\",\r\n  \"tutorial_group\": [\"a00239a4-5958-462b-bd2a-2d549d853d07\"]\r\n}\r\n\r\n    ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_session_assignment",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "start analysis",
+							"id": "50378507-cd670566-1ebb-42b3-993c-c86d581fd3c8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rapporteur\": \"7ebbb705-d4df-409b-bb9c-d2920299f3d9\",\r\n    \"coordenator\": \"2c0c219e-cbeb-456d-9648-4d0c0531e0eb\",\r\n    \"students\": [\r\n        { \r\n            \"student\": \"2c0c219e-cbeb-456d-9648-4d0c0531e0eb\",\r\n            \"is_present\": true\r\n        },\r\n        { \r\n            \"student\": \"3364390f-7082-4776-a6ae-a294a8dbafc1\",\r\n            \"is_present\": true\r\n        },\r\n        { \r\n            \"student\": \"7ebbb705-d4df-409b-bb9c-d2920299f3d9\",\r\n            \"is_present\": true\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/ead7b3e8-47a7-4aae-afb0-19e6bf2d774c/start_analysis/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_session_assignment",
+										"ead7b3e8-47a7-4aae-afb0-19e6bf2d774c",
+										"start_analysis",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tutorial session assignment",
+							"id": "50378507-d42f4b8a-2e9e-4d91-bd9b-ddcf7df64f8e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_session_assignment",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-96919300-fc23-4d21-b776-297179651f60"
+				}
+			],
+			"id": "50378507-25063765-fe28-4602-b954-08855f634885"
+		},
+		{
+			"name": "residencia",
+			"item": [
+				{
+					"name": "trail",
+					"item": [
+						{
+							"name": "item",
+							"item": [
+								{
+									"name": "item",
+									"id": "50378507-cb12d8d7-ef2d-407f-be88-b294b170fb43",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"title\": \"Cadastro inicial\",\r\n  \"description\": \"Realização do cadastro do município no processo seletivo da residência\",\r\n  \"start_date\": \"2025-09-23\",\r\n  \"end_date\": \"2025-09-23\",\r\n  \"status\": \"PENDENTE\",\r\n  \"trail\": \"2f932143-caf0-496e-a856-842945c0b243\"\r\n}"
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/residencia/core/itens/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"residencia",
+												"core",
+												"itens",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "item",
+									"id": "50378507-2fed3353-742b-4281-b1fc-3a81dc8c6a72",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"title\": \"Homologação de inscrição\",\r\n  \"description\": \"Situação da inscrição do município após a análise do órgão responsável (COREME)\",\r\n  \"start_date\": \"13/09/2025\",\r\n  \"end_date\": \"14/09/2025\",\r\n  \"trail\": \"2f932143-caf0-496e-a856-842945c0b243\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/residencia/core/itens/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"residencia",
+												"core",
+												"itens",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "item",
+									"id": "50378507-1ea42426-a345-4cd1-86f6-62e057f57ac7",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"status\": \"APROVADO\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/residencia/core/itens/7f4c124b-826f-4204-8fb8-a735027a185d/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"residencia",
+												"core",
+												"itens",
+												"7f4c124b-826f-4204-8fb8-a735027a185d",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "50378507-6f2e5015-2d67-4834-8ba4-808ac4bf27d0"
+						},
+						{
+							"name": "trail",
+							"id": "50378507-ab60fb79-f338-4e13-80cb-8656ec6fb46a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "municipality",
+											"value": "4e7fa197-7562-4289-ac28-1c308a896efe",
+											"type": "text"
+										},
+										{
+											"key": "term_adhesion",
+											"value": "701b9955-f6a8-4580-a4da-305d701ead77",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/residencia/core/trail/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"residencia",
+										"core",
+										"trail",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "trail",
+							"id": "50378507-f0aec6d5-c5a5-4562-942d-ed7f5b667125",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "term_adhesion_signed",
+											"value": "{{TERM}}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/residencia/core/trail/{{TRAIL}}/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"residencia",
+										"core",
+										"trail",
+										"{{TRAIL}}",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "trail",
+							"id": "50378507-5cb42d06-0a26-4690-a09e-f480df00d55b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "term_adhesion_signed",
+											"value": "67904584-948d-4dff-8a24-c9efd5678a3d",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/residencia/core/trail/c94e1118-1f06-45ed-a1be-b5b6e4c25391/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"residencia",
+										"core",
+										"trail",
+										"c94e1118-1f06-45ed-a1be-b5b6e4c25391",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "trail",
+							"id": "50378507-3e6ea3d7-9dd2-45a3-8549-98cdf78fdbc9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN3}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/residencia/core/trail/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"residencia",
+										"core",
+										"trail",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-b32728eb-d30c-4711-830c-ae040cf9e21a"
+				},
+				{
+					"name": "instrumento de visita",
+					"item": [
+						{
+							"name": "response",
+							"item": [
+								{
+									"name": "response",
+									"id": "50378507-4bce4b74-1e5d-4931-901f-0584d1bdbf97",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/residencia/core/responses_instrument/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"residencia",
+												"core",
+												"responses_instrument",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "response",
+									"id": "50378507-04f74db4-692d-43b5-b46f-cfa1b348b242",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"question\": \"48df664b-ca22-451f-bf1f-77966a6ac6f9\",\r\n  \"title\": \"Agentes Comunitários de Saúde\",\r\n  \"booleano\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/residencia/core/responses_instrument/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"residencia",
+												"core",
+												"responses_instrument",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "50378507-479ca3f0-d277-48f9-945c-270a188f5b9e"
+						},
+						{
+							"name": "visit inst",
+							"id": "50378507-5193d273-0665-4cea-b1c6-08d1a664f443",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ubs",
+											"value": "3b31ae41-7069-4f8f-b648-750e47ddbc3e",
+											"type": "text"
+										},
+										{
+											"key": "item",
+											"value": "2dd9103f-4d14-470b-a302-4706a13b0bbd",
+											"type": "text"
+										},
+										{
+											"key": "date_visit",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "visit_scheduling_date",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "observations",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "justification",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "archive",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/residencia/core/visits_instrument/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"residencia",
+										"core",
+										"visits_instrument",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "visit inst",
+							"id": "50378507-f21f7be1-07a9-4a1d-934f-e18268106fc2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "term_adhesion_signed",
+											"value": "67904584-948d-4dff-8a24-c9efd5678a3d",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/residencia/core/visits_instrument/f4ee8ecd-308a-4d9c-be86-b3c2667fc006/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"residencia",
+										"core",
+										"visits_instrument",
+										"f4ee8ecd-308a-4d9c-be86-b3c2667fc006",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "visit inst",
+							"id": "50378507-615941cc-1a52-4511-9af7-242a11445f51",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/residencia/core/visits_instrument/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"residencia",
+										"core",
+										"visits_instrument",
+										""
+									],
+									"query": [
+										{
+											"key": "ubs",
+											"value": "5c6dc8dd-800d-43fa-a7e0-40a975f67f09",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "visit inst",
+							"id": "50378507-2a9aeb6c-a4c6-44fa-a087-795fe97f15e0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"visit_scheduling_date\": \"07/10/2025\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/residencia/core/visits_instrument/19c08656-b29a-44e9-afba-834cc185f397/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"residencia",
+										"core",
+										"visits_instrument",
+										"19c08656-b29a-44e9-afba-834cc185f397",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-9ddea220-cc6e-47a4-9842-db834dddb01e"
+				},
+				{
+					"name": "term",
+					"item": [
+						{
+							"name": "termo",
+							"id": "50378507-3f320928-7058-4cc9-a78f-a15550e9f491",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/residencia/core/term/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"residencia",
+										"core",
+										"term",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "termo",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = pm.response.json();\r",
+											"pm.environment.set(\"TERM\", data.id)\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {},
+										"id": "60d3b3c2-36ff-4014-adfa-d3ed5578195b"
+									}
+								}
+							],
+							"id": "50378507-32a154c9-27cf-4157-a574-078532266fed",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "municipality",
+											"value": "{{MUNICIPALITY}}",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "termo assinado",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": "postman-cloud:///1f09d3ad-679b-45d0-b820-0bae07325856"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/residencia/core/term/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"residencia",
+										"core",
+										"term",
+										""
+									],
+									"query": [
+										{
+											"key": "municipality",
+											"value": "4e7fa197-7562-4289-ac28-1c308a896efe",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "termo",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-7d2c812d-6eac-4924-ba00-c947d5227317"
+				}
+			],
+			"id": "50378507-a6293e7a-995a-4e66-ac66-41dff9435e41"
+		},
+		{
+			"name": "UBS",
+			"item": [
+				{
+					"name": "ubs",
+					"id": "50378507-1cb49939-d28e-47a4-803f-77e039103644",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN1}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/medhub/core/ubs/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"medhub",
+								"core",
+								"ubs",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ubs",
+					"id": "50378507-af38cd38-4a6b-4b33-bcad-5d3adff71600",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": " Maria Marques",
+									"type": "text"
+								},
+								{
+									"key": "cnes",
+									"value": " 123456",
+									"type": "text"
+								},
+								{
+									"key": "address_unit_health",
+									"value": "{{ADDRESS}}",
+									"type": "text"
+								},
+								{
+									"key": "municipality",
+									"value": "{{MUNICIPALITY}}",
+									"type": "text"
+								},
+								{
+									"key": "registered_population",
+									"value": " 10",
+									"type": "text"
+								},
+								{
+									"key": "nurse\"",
+									"value": " 1",
+									"type": "text"
+								},
+								{
+									"key": "nursing_technicians\"",
+									"value": " 2",
+									"type": "text"
+								},
+								{
+									"key": "dentists",
+									"value": " 3",
+									"type": "text"
+								},
+								{
+									"key": "oral_health_technicians",
+									"value": " 4",
+									"type": "text"
+								},
+								{
+									"key": "community_worker",
+									"value": " 5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/medhub/core/ubs/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"medhub",
+								"core",
+								"ubs",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "50378507-1c06ee52-8507-4a4f-ab71-cffcecfc3f53"
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "session",
+					"item": [
+						{
+							"name": "JWT",
+							"item": [
+								{
+									"name": "[Rest][JWT] get token",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var data = pm.response.json();",
+													"pm.environment.set(\"TOKEN\", data.access)",
+													"pm.environment.set(\"REFRESH_TOKEN\", data.refresh)"
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"id": "75ca3a52-e620-4bef-b119-d201976feff8"
+											}
+										}
+									],
+									"id": "50378507-314cdd2d-2d5e-4422-aed6-05a63c3ea1eb",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "email",
+													"value": "{{EMAIL}}",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "{{PASSWORD}}",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/user/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"user",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "50378507-ba4df3d5-4e56-4392-a59b-47534fc04662"
+						}
+					],
+					"id": "50378507-c3ad0379-4716-408f-ab36-b6db288586e5"
+				},
+				{
+					"name": "profile",
+					"item": [
+						{
+							"name": "profile",
+							"id": "50378507-26335d75-0347-403a-9d96-97d79ae51ef1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"user\": \"637137cb-2ba6-46b8-b799-25aefba7245f\",\r\n  \"name\": \"João da Silva\",\r\n  \"phone\": \"1133334444\",\r\n  \"cellphone\": \"11999999999\",\r\n  \"born\": \"10/03/2012\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/user/profile/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"profile",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "profile",
+							"id": "50378507-c9db5f49-5d5b-46ab-b5ce-158530a74014",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/user/profile/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"profile",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "profile",
+							"id": "50378507-631c9686-5a82-492f-b131-9d84b7cef379",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"mayor\": \"naborzin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/user/municipality/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"municipality",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-590c2ec2-2540-49cc-9487-a7645eb9d61c"
+				},
+				{
+					"name": "address",
+					"item": [
+						{
+							"name": "address",
+							"id": "50378507-c7a99ab4-8096-48d2-b5d0-c92439732020",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/common/address/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"common",
+										"address",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "address",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = pm.response.json();\r",
+											"pm.collectionVariables.set(\"ADDRESS\", data.id)\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {},
+										"id": "e7a013fd-20f9-4080-bba1-3a62dbd0bb3e"
+									}
+								}
+							],
+							"id": "50378507-bf97f118-b4a3-4c06-8b9b-05a5ec0abca9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"street\": \"Centro\",\r\n  \"number\": \"5\",\r\n  \"city\": \"Patos\",\r\n  \"state\": \"PB\",\r\n  \"district\": \"Santo Antonio\",\r\n  \"zip_code\": \"58600-000\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/common/address/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"common",
+										"address",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-e55d0dd5-18e6-49c6-8c3d-140802b92324"
+				},
+				{
+					"name": "municipality",
+					"item": [
+						{
+							"name": "mayor",
+							"item": [
+								{
+									"name": "mayor",
+									"id": "50378507-63643c78-2fb3-454f-90d2-52b9703394a1",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/mayors/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"mayors",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "mayor me",
+									"id": "50378507-be7822f8-5318-4dbc-95eb-9a0963fbb150",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/mayors/mine/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"mayors",
+												"mine",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "mayor",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var data = pm.response.json();\r",
+													"pm.collectionVariables.set(\"MAYOR\", data.id)\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {},
+												"id": "22dde242-39f2-4dcb-9041-35523a0ea3fe"
+											}
+										}
+									],
+									"id": "50378507-060fa663-80be-4127-bacd-e62737679092",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"mayor\": \"prefeito malta\",\r\n  \"cpf_mayor\": \"41234567890\",\r\n  \"rg_mayor\": \"135647\",\r\n  \"marital_status_mayor\": \"CAS\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/mayors/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"mayors",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "mayor",
+									"id": "50378507-6e2d4616-225e-4147-b13b-4ffa5b1cc4db",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"mayor\": \"naborzin\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/mayors/update-mine/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"mayors",
+												"update-mine",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "50378507-2465efe0-1934-45a7-9ba5-a71257e4be5a"
+						},
+						{
+							"name": "secretary",
+							"item": [
+								{
+									"name": "secretary",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {},
+												"id": "d7b6d9e9-08c9-47d0-8d8e-acf9bdeee4ac"
+											}
+										}
+									],
+									"id": "50378507-c733d5e0-5fa0-4eca-8535-1ac7685e7b12",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/secretary/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"secretary",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "secretary me",
+									"id": "50378507-f3fb7e8b-c549-417d-b5eb-5194dd098102",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/secretary/mine/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"secretary",
+												"mine",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "secretary",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var data = pm.response.json();\r",
+													"pm.collectionVariables.set(\"SECRETARY\", data.id)\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {},
+												"id": "aa8f591e-7b1f-43a6-bc73-21965947f191"
+											}
+										}
+									],
+									"id": "50378507-a150408a-b0a3-4470-94a9-96ae74c4ec28",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"name_secretary\": \"Secretario malta\",\r\n  \"cpf_secretary\": \"41234567890\",\r\n  \"rg_secretary\": \"135647\",\r\n  \"maritial_status_secretary\": \"CAS\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/secretary/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"secretary",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "secretary",
+									"id": "50378507-8a2222a5-2910-452e-9007-d3f5b31e4732",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"mayor\": \"naborzin\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/mayors/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"mayors",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "50378507-a4f9738f-c44d-4b7f-bf4a-2ffd72f69f89"
+						},
+						{
+							"name": "municipality",
+							"item": [
+								{
+									"name": "municipality",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var data = pm.response.json();\r",
+													"pm.environment.set(\"MUNICIPALITY\", data.id)\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {},
+												"id": "9f4bb730-b0a1-43e8-be7c-486cefb3700b"
+											}
+										}
+									],
+									"id": "50378507-035dcee5-7410-4f4d-a46b-474ad7193682",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/municipality/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"municipality",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "municipality",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var data = pm.response.json();\r",
+													"pm.collectionVariables.set(\"MUNICIPALITY\", data.id)\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {},
+												"id": "c94af859-5962-465c-993f-1818d7323c58"
+											}
+										}
+									],
+									"id": "50378507-f51d8b92-74bc-4b17-925c-d5be8502d2ab",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Patos",
+													"type": "text"
+												},
+												{
+													"key": "state",
+													"value": "PB",
+													"type": "text"
+												},
+												{
+													"key": "population",
+													"value": "123",
+													"type": "text"
+												},
+												{
+													"key": "quantity_ubs",
+													"value": "123",
+													"type": "text"
+												},
+												{
+													"key": "address",
+													"value": "{{ADDRESS}}",
+													"type": "text"
+												},
+												{
+													"key": "current_mayor",
+													"value": "{{MAYOR}}",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/municipality/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"municipality",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "municipality",
+									"id": "50378507-f09ca5b2-fcae-4bd2-9015-0fae47c5b98e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "primary_care_coordinator",
+													"value": "{{COORDINATOR}}",
+													"type": "text"
+												},
+												{
+													"key": "current_mayor",
+													"value": "{{MAYOR}}",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/municipality/{{MUNICIPALITY}}/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"municipality",
+												"{{MUNICIPALITY}}",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "50378507-3757bae8-4240-4514-8fa9-9ddd5f6584cc"
+						},
+						{
+							"name": "secretariat",
+							"item": [
+								{
+									"name": "secretariat",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var data = pm.response.json();\r",
+													"pm.collectionVariables.set(\"SECRETARIAT\", data.id)\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {},
+												"id": "c9b1cf20-df02-4296-95ff-d6901f73335a"
+											}
+										}
+									],
+									"id": "50378507-ced9701f-d3ff-4360-8f4e-e393815d4671",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN2}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/secretariat/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"secretariat",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "secretariat me",
+									"id": "50378507-ade49fd5-8aca-4900-aeb0-33c3c061a2ff",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/secretariat/mine/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"secretariat",
+												"mine",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "secretariat",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var data = pm.response.json();\r",
+													"pm.collectionVariables.set(\"SECRETARIAT\", data.id)\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {},
+												"id": "39ef23af-4c44-4827-b255-20415791f851"
+											}
+										}
+									],
+									"id": "50378507-879b61a0-e05c-4061-9f54-8baa05e78b7c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "user",
+													"value": "{{USER}}",
+													"type": "text"
+												},
+												{
+													"key": "name_secretariat",
+													"value": " Saúde",
+													"type": "text"
+												},
+												{
+													"key": "phone_secretariat",
+													"value": " 8334612134",
+													"type": "text"
+												},
+												{
+													"key": "address_secretariat",
+													"value": "{{ADDRESS}}",
+													"type": "text"
+												},
+												{
+													"key": "municipality",
+													"value": "{{MUNICIPALITY}}",
+													"type": "text"
+												},
+												{
+													"key": "current_secretary",
+													"value": "{{SECRETARY}}",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/secretariat/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"secretariat",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "secretariat",
+									"id": "50378507-ac33fb3b-3c85-4529-9e34-0b8354c3f1e4",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"address_secretariat\": \"318d3b15-00bb-4ee6-bcfe-2946488d0d73\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/secretariat/f66af751-5a20-4d95-9cc5-a25b685dd112/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"secretariat",
+												"f66af751-5a20-4d95-9cc5-a25b685dd112",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "50378507-a5bf74e9-dc4b-402a-a900-054bb007d914"
+						},
+						{
+							"name": "primary-care-coordinator",
+							"item": [
+								{
+									"name": "coordinator",
+									"id": "50378507-35915f98-fa45-4316-a0ba-eb7b4d81375f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN3}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/primary-care-coordinator/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"primary-care-coordinator",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "coordinator",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var data = pm.response.json();\r",
+													"pm.collectionVariables.set(\"COORDINATOR\", data.id)\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {},
+												"id": "d956acec-95b9-4a6c-b514-eec1cceebc4f"
+											}
+										}
+									],
+									"id": "50378507-39ce1604-7718-4f27-8ded-d8466014412e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "name_coordinator",
+													"value": "coordenador teste",
+													"type": "text"
+												},
+												{
+													"key": "graduation",
+													"value": "médico",
+													"type": "text"
+												},
+												{
+													"key": "postgraduate_studies",
+													"value": "",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/medhub/user/primary-care-coordinator/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"medhub",
+												"user",
+												"primary-care-coordinator",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "50378507-a142fdfe-ba1e-4e90-886c-09f3b3447648"
+						}
+					],
+					"id": "50378507-68f55755-d40b-458f-8b5e-96a675853b67"
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "User",
+							"id": "50378507-45beb361-358f-49c5-bbca-91ad2d40e4f7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/user/user/d03b1635-efc2-4dfb-a5bb-42f30c49305a/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"user",
+										"user",
+										"d03b1635-efc2-4dfb-a5bb-42f30c49305a",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All Users",
+							"id": "50378507-246f922b-f565-496c-bd0d-e942f9f8a15d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/user/user/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"user",
+										"user",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create User",
+							"id": "50378507-5ba8c42f-7a0e-45c7-ac6b-4d25efc7e878",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "aluno19@gmail.com",
+											"type": "text",
+											"uuid": "5ff9c7c2-eb63-4068-8cf1-e8729f394388"
+										},
+										{
+											"key": "password",
+											"value": "Admin@123",
+											"type": "text",
+											"uuid": "5c78add9-03c5-41ae-8e5f-30ed7b6c0a4b"
+										},
+										{
+											"key": "roles",
+											"value": "moderador-gt",
+											"type": "text",
+											"uuid": "3a38ac88-810d-40ab-87b5-0647d41a4720"
+										},
+										{
+											"key": "first_name",
+											"value": "Wanderson",
+											"type": "text",
+											"uuid": "0b084f68-18e8-4a23-a220-2009f3673aa1"
+										},
+										{
+											"key": "last_name",
+											"value": "Lima",
+											"type": "text",
+											"uuid": "f58468c5-4c1d-4663-9a50-00e78b3c3545"
+										},
+										{
+											"key": "avatar",
+											"type": "file",
+											"uuid": "3a0d3e64-0388-4ca6-8907-edaf5f3a6477",
+											"value": null
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/user/user/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"user",
+										"user",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit User",
+							"id": "50378507-ad13edcf-8f76-4b92-9526-273a87463173",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "roles",
+											"value": "facilitador-gt",
+											"type": "text",
+											"uuid": "3a38ac88-810d-40ab-87b5-0647d41a4720"
+										},
+										{
+											"key": "roles",
+											"value": "aluno-gt",
+											"type": "text",
+											"uuid": "6e491110-20a8-4bd2-a87d-94212d08928f",
+											"disabled": true
+										},
+										{
+											"key": "roles",
+											"value": "moderador-gt",
+											"type": "text",
+											"uuid": "00a49fb3-a6c6-4060-9dc2-f9c07b513593",
+											"disabled": true
+										},
+										{
+											"key": "roles",
+											"value": "teste",
+											"type": "text",
+											"uuid": "536af8fb-7d33-4203-bf0e-3075b48f0e87",
+											"disabled": true
+										},
+										{
+											"key": "first_name",
+											"value": "Ayslan",
+											"type": "text",
+											"uuid": "0b084f68-18e8-4a23-a220-2009f3673aa1",
+											"disabled": true
+										},
+										{
+											"key": "last_name",
+											"value": "Rennedy Designer",
+											"type": "text",
+											"uuid": "f58468c5-4c1d-4663-9a50-00e78b3c3545",
+											"disabled": true
+										},
+										{
+											"key": "avatar",
+											"type": "file",
+											"uuid": "3a0d3e64-0388-4ca6-8907-edaf5f3a6477",
+											"src": "/home/daniel/Imagens/wallpapersden.jpg",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/user/user/d03b1635-efc2-4dfb-a5bb-42f30c49305a/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"user",
+										"user",
+										"d03b1635-efc2-4dfb-a5bb-42f30c49305a",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Password",
+							"id": "50378507-ba2a8097-21b6-4c2e-980b-bede09a6c94a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"current_password\": \"Admin@1234\",\n    \"new_password\": \"Admin@123\",\n    \"confirm_password\": \"Admin@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/medhub/user/user/change-password/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"medhub",
+										"user",
+										"user",
+										"change-password",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50378507-55881f2c-12c9-4a5d-ade5-dcca3b6b4836"
+				}
+			],
+			"id": "50378507-4b22940d-5ccd-4038-a05f-7128eedd97e2"
+		},
+		{
+			"name": "[Rest] me",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "158b21f4-5b80-4809-ac34-018cfd25f25c",
+						"exec": [
+							"var data = pm.response.json();\r",
+							"pm.collectionVariables.set(\"FACILITADOR\", data.id)\r",
+							"pm.collectionVariables.set(\"USER_KEYCLOACK_ALUNO2\", data.keycloak_id)\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b519783f-d9d1-4314-8d0c-cd7da413ea42",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "50378507-bb601ff1-84d2-4224-b3bd-166556fc2654",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN1}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/medhub/user/user/me/",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"medhub",
+						"user",
+						"user",
+						"me",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login keycloack",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "15c37495-4ef1-44ec-98d4-b558c1680d18",
+						"exec": [
+							"var data = pm.response.json();\r",
+							"pm.collectionVariables.set(\"TOKEN1\", data.access_token)\r",
+							"pm.collectionVariables.set(\"REFRESH_TOKEN\", data.refresh_token)\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d9868258-8927-4504-9d9f-ae572ddf5d5b",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "50378507-4f24c294-df03-4655-b095-a3a07120cc57",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "nit-medhub",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "{{EMAIL}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{PASSWORD}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "nit-medhub-secret-2024",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/realms/nit-prod/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"realms",
+						"nit-prod",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "03001cc6-9146-4304-8069-b32d22b688ff",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "bb7aec16-05bf-4319-ab48-9c90cbc88155",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					"// Evita loop infinito",
+					"let retry = pm.collectionVariables.get(\"retry_request\");",
+					"",
+					"if (pm.response.code === 401 && !retry) {",
+					"",
+					"    console.log(\"Token expirado. Tentando refresh...\");",
+					"",
+					"    pm.collectionVariables.set(\"retry_request\", \"true\");",
+					"",
+					"    pm.sendRequest({",
+					"        url: \"http://localhost:8080/realms/nit-prod/protocol/openid-connect/token\",",
+					"        method: \"POST\",",
+					"        header: {",
+					"            \"Content-Type\": \"application/x-www-form-urlencoded\"",
+					"        },",
+					"        body: {",
+					"            mode: \"urlencoded\",",
+					"            urlencoded: [",
+					"                { key: \"grant_type\", value: \"refresh_token\" },",
+					"                { key: \"client_id\", value: pm.collectionVariables.get(\"CLIENT_ID\") },",
+					"                { key: \"client_secret\", value: pm.collectionVariables.get(\"CLIENT_SECRET\") },",
+					"                { key: \"refresh_token\", value: pm.collectionVariables.get(\"REFRESH_TOKEN\") }",
+					"            ]",
+					"        }",
+					"    }, function (err, res) {",
+					"",
+					"        if (!err && res.code === 200) {",
+					"",
+					"            const data = res.json();",
+					"",
+					"            pm.collectionVariables.set(\"TOKEN1\", data.access_token);",
+					"            pm.collectionVariables.set(\"REFRESH_TOKEN\", data.refresh_token);",
+					"",
+					"            console.log(\"Token renovado. Reexecutando request...\");",
+					"",
+					"            postman.setNextRequest(pm.info.requestName);",
+					"",
+					"        } else {",
+					"            console.log(\"Refresh falhou.\");",
+					"            pm.collectionVariables.unset(\"retry_request\");",
+					"        }",
+					"    });",
+					"",
+					"} else {",
+					"    pm.collectionVariables.unset(\"retry_request\");",
+					"}"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "TOKEN1",
+			"value": ""
+		},
+		{
+			"key": "REFRESH_TOKEN",
+			"value": ""
+		},
+		{
+			"key": "USER",
+			"value": ""
+		},
+		{
+			"key": "USER_KEYCLOACK",
+			"value": ""
+		},
+		{
+			"key": "EMAIL",
+			"value": ""
+		},
+		{
+			"key": "PASSWORD",
+			"value": ""
+		},
+		{
+			"key": "BASE_URL",
+			"value": ""
+		},
+		{
+			"key": "TOKEN",
+			"value": ""
+		},
+		{
+			"key": "TOKEN3",
+			"value": ""
+		},
+		{
+			"key": "TOKEN2",
+			"value": ""
+		},
+		{
+			"key": "USER_FAC",
+			"value": ""
+		},
+		{
+			"key": "USER_KEYCLOACK_FAC",
+			"value": ""
+		},
+		{
+			"key": "USER_MOD",
+			"value": ""
+		},
+		{
+			"key": "USER_KEYCLOACK_MOD",
+			"value": ""
+		},
+		{
+			"key": "USER_STUD",
+			"value": ""
+		},
+		{
+			"key": "USER_KEYCLOACK_STUD",
+			"value": ""
+		},
+		{
+			"key": "ADMIN",
+			"value": ""
+		},
+		{
+			"key": "TOKEN4",
+			"value": ""
+		},
+		{
+			"key": "USER_ALUNO1",
+			"value": ""
+		},
+		{
+			"key": "USER_KEYCLOACK_ALUNO1",
+			"value": ""
+		},
+		{
+			"key": "USER_ALUNO2",
+			"value": ""
+		},
+		{
+			"key": "USER_KEYCLOACK_ALUNO2",
+			"value": ""
+		},
+		{
+			"key": "FACILITADOR",
+			"value": ""
+		},
+		{
+			"key": "ASSIGN_ID",
+			"value": ""
+		},
+		{
+			"key": "GT_ID",
+			"value": ""
+		},
+		{
+			"key": "USER_MODERADOR",
+			"value": ""
+		},
+		{
+			"key": "USER_FACILITADOR",
+			"value": ""
+		},
+		{
+			"key": "ALUNO1",
+			"value": ""
+		},
+		{
+			"key": "P1",
+			"value": ""
+		},
+		{
+			"key": "ALUNO2",
+			"value": ""
+		},
+		{
+			"key": "SIT_PROBLEMA",
+			"value": ""
+		},
+		{
+			"key": "P2",
+			"value": ""
+		},
+		{
+			"key": "EVALUATION_ID",
+			"value": ""
+		},
+		{
+			"key": "PROBLEMA",
+			"value": ""
+		},
+		{
+			"key": "GT_NOEXIST",
+			"value": ""
+		},
+		{
+			"key": "GT_EXIST",
+			"value": ""
+		}
+	]
+}
