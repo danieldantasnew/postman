@@ -3449,19 +3449,10 @@
 										}
 									]
 								},
-								"method": "POST",
+								"method": "PATCH",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"rapporteur\": \"7ebbb705-d4df-409b-bb9c-d2920299f3d9\",\r\n    \"coordenator\": \"2c0c219e-cbeb-456d-9648-4d0c0531e0eb\",\r\n    \"students\": [\r\n        { \r\n            \"student\": \"2c0c219e-cbeb-456d-9648-4d0c0531e0eb\",\r\n            \"is_present\": true\r\n        },\r\n        { \r\n            \"student\": \"3364390f-7082-4776-a6ae-a294a8dbafc1\",\r\n            \"is_present\": true\r\n        },\r\n        { \r\n            \"student\": \"7ebbb705-d4df-409b-bb9c-d2920299f3d9\",\r\n            \"is_present\": true\r\n        }\r\n    ]\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/ead7b3e8-47a7-4aae-afb0-19e6bf2d774c/start_analysis/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/ead7b3e8-47a7-4aae-afb0-19e6bf2d774c/advance-stage/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3472,7 +3463,7 @@
 										"core",
 										"tutorial_session_assignment",
 										"ead7b3e8-47a7-4aae-afb0-19e6bf2d774c",
-										"start_analysis",
+										"advance-stage",
 										""
 									]
 								}
