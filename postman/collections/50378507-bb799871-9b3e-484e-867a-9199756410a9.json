@@ -6038,15 +6038,13 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:8080/realms/nit-prod/protocol/openid-connect/token",
-					"protocol": "http",
+					"raw": "{{BASE_URL_KC}}/realms/{{REALM}}/protocol/openid-connect/token",
 					"host": [
-						"localhost"
+						"{{BASE_URL_KC}}"
 					],
-					"port": "8080",
 					"path": [
 						"realms",
-						"nit-prod",
+						"{{REALM}}",
 						"protocol",
 						"openid-connect",
 						"token"
