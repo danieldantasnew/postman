@@ -3239,7 +3239,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/?tutorial_group=92bec04f-81d2-46f7-9b78-3c724d305896",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3254,7 +3254,8 @@
 									"query": [
 										{
 											"key": "tutorial_group",
-											"value": "92bec04f-81d2-46f7-9b78-3c724d305896"
+											"value": "92bec04f-81d2-46f7-9b78-3c724d305896",
+											"disabled": true
 										},
 										{
 											"key": "tutorial_session",
@@ -3414,7 +3415,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/ead7b3e8-47a7-4aae-afb0-19e6bf2d774c/start_analysis/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/e2fbadef-9430-4c15-bce3-6a62cb37a9f1/start_analysis/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3424,7 +3425,7 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"ead7b3e8-47a7-4aae-afb0-19e6bf2d774c",
+										"e2fbadef-9430-4c15-bce3-6a62cb37a9f1",
 										"start_analysis",
 										""
 									]
