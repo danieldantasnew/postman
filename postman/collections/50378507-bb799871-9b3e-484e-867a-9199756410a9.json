@@ -640,7 +640,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\r\n    {\r\n        \"evaluation\": \"f1ba5360-b820-4e33-9707-ab5fad5a0d4a\",\r\n        \"step_number\": 5,\r\n        \"student_time_step\": \"12\",\r\n        \"time_step\": \"120\",\r\n        \"clicks_warning\": 1,\r\n        \"clicks_dislike\": 0,\r\n        \"clicks_like\": 20,\r\n        \"clicks_heart\": 1,\r\n        \"clicks_star\": 6,\r\n        \"clicks_sun\": 8\r\n    },\r\n    {\r\n        \"evaluation\": \"d07bdd9d-3d90-4883-b5b8-1a9c06c91fc3\",\r\n        \"step_number\": 5,\r\n        \"student_time_step\": \"5\",\r\n        \"time_step\": \"5\",\r\n        \"clicks_warning\": 0,\r\n        \"clicks_dislike\": 2,\r\n        \"clicks_like\": 50,\r\n        \"clicks_heart\": 4,\r\n        \"clicks_star\": 32,\r\n        \"clicks_sun\": 10\r\n    },\r\n    {\r\n        \"evaluation\": \"ee4c2623-682f-45bd-a029-6f3c5467710c\",\r\n        \"step_number\": 5,\r\n        \"student_time_step\": \"4\",\r\n        \"time_step\": \"4\",\r\n        \"clicks_warning\": 120,\r\n        \"clicks_dislike\": 4,\r\n        \"clicks_like\": 1,\r\n        \"clicks_heart\": 7,\r\n        \"clicks_star\": 3,\r\n        \"clicks_sun\": 82\r\n    }\r\n]",
+									"raw": "[\r\n    {\r\n        \"evaluation\": \"f1ba5360-b820-4e33-9707-ab5fad5a0d4a\",\r\n        \"step_number\": 6,\r\n        \"student_time_step\": \"12\",\r\n        \"time_step\": \"120\",\r\n        \"clicks_warning\": 1,\r\n        \"clicks_dislike\": 0,\r\n        \"clicks_like\": 20,\r\n        \"clicks_heart\": 1,\r\n        \"clicks_star\": 6,\r\n        \"clicks_sun\": 8\r\n    },\r\n    {\r\n        \"evaluation\": \"d07bdd9d-3d90-4883-b5b8-1a9c06c91fc3\",\r\n        \"step_number\": 6,\r\n        \"student_time_step\": \"5\",\r\n        \"time_step\": \"5\",\r\n        \"clicks_warning\": 0,\r\n        \"clicks_dislike\": 2,\r\n        \"clicks_like\": 50,\r\n        \"clicks_heart\": 4,\r\n        \"clicks_star\": 32,\r\n        \"clicks_sun\": 10\r\n    },\r\n    {\r\n        \"evaluation\": \"ee4c2623-682f-45bd-a029-6f3c5467710c\",\r\n        \"step_number\": 6,\r\n        \"student_time_step\": \"4\",\r\n        \"time_step\": \"4\",\r\n        \"clicks_warning\": 120,\r\n        \"clicks_dislike\": 4,\r\n        \"clicks_like\": 1,\r\n        \"clicks_heart\": 7,\r\n        \"clicks_star\": 3,\r\n        \"clicks_sun\": 82\r\n    }\r\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2291,7 +2291,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/student_attendance_session/?semester=2026.1&page=2&tutorial_group=0a12ec32-f5e1-41f3-8b25-fbbb082b2cd4",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/student_attendance_session/?semester=2026.1&page=2&tutorial_group=92bec04f-81d2-46f7-9b78-3c724d305896",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -2319,8 +2319,7 @@
 										},
 										{
 											"key": "tutorial_group",
-											"value": "0a12ec32-f5e1-41f3-8b25-fbbb082b2cd4",
-											"type": "text"
+											"value": "92bec04f-81d2-46f7-9b78-3c724d305896"
 										}
 									]
 								}
