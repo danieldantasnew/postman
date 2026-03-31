@@ -3498,7 +3498,7 @@
 								"method": "PATCH",
 								"header": [],
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/ead7b3e8-47a7-4aae-afb0-19e6bf2d774c/advance-stage/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/fb3b602d-38d3-4789-90d5-41d01dd873f0/advance-stage/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3508,7 +3508,7 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"ead7b3e8-47a7-4aae-afb0-19e6bf2d774c",
+										"fb3b602d-38d3-4789-90d5-41d01dd873f0",
 										"advance-stage",
 										""
 									]
