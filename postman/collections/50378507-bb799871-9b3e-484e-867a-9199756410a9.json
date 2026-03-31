@@ -3460,7 +3460,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/3d924dc3-9983-43c8-ac84-c28341779b9/start_resolution/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/3d924dc3-9983-43c8-ac84-c28341779b95/start_resolution/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3470,7 +3470,7 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"3d924dc3-9983-43c8-ac84-c28341779b9",
+										"3d924dc3-9983-43c8-ac84-c28341779b95",
 										"start_resolution",
 										""
 									]
@@ -3498,7 +3498,7 @@
 								"method": "PATCH",
 								"header": [],
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/3d924dc3-9983-43c8-ac84-c28341779b9/advance-stage/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/3d924dc3-9983-43c8-ac84-c28341779b95/advance-stage/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3508,7 +3508,7 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"3d924dc3-9983-43c8-ac84-c28341779b9",
+										"3d924dc3-9983-43c8-ac84-c28341779b95",
 										"advance-stage",
 										""
 									]
