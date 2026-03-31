@@ -3460,7 +3460,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/e2fbadef-9430-4c15-bce3-6a62cb37a9f1/start_resolution/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/3d924dc3-9983-43c8-ac84-c28341779b9/start_resolution/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3470,7 +3470,7 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"e2fbadef-9430-4c15-bce3-6a62cb37a9f1",
+										"3d924dc3-9983-43c8-ac84-c28341779b9",
 										"start_resolution",
 										""
 									]
