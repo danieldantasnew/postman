@@ -431,6 +431,51 @@
 							"response": []
 						},
 						{
+							"name": "batch update",
+							"id": "50378507-b164a500-7ea9-4ca6-a551-9be0ab1b1598",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"student\": \"\",\r\n    \"tutorial_group\": \"\",\r\n    \"student_attendance_session\": \"\",\r\n    \"tutorial_session\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_tutorial_session/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"evaluation_tutorial_session",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "evaluation",
 							"id": "50378507-b1b3b9e1-9757-468a-9ef4-e8da1b836328",
 							"protocolProfileBehavior": {
