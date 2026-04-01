@@ -402,11 +402,11 @@
 										}
 									]
 								},
-								"method": "POST",
+								"method": "PATCH",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"student\": \"\",\r\n    \"tutorial_group\": \"\",\r\n    \"student_attendance_session\": \"\",\r\n    \"tutorial_session\": \"\"\r\n}",
+									"raw": "[\r\n    {\r\n        \"evaluation_id\": \"aaa046cc-d9c5-4a37-9128-e2164d4e7b02\",\r\n        \"note_conceptual_map\": 8\r\n    }\r\n]",
 									"options": {
 										"raw": {
 											"language": "json"
