@@ -2383,7 +2383,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/student_attendance_session/?semester=2026.1&page=1&student=d71bfdc0-79b5-48b7-a3e6-5697b574b45b",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/student_attendance_session/?semester=2026.1&page=1&tutorial_group=92bec04f-81d2-46f7-9b78-3c724d305896&student=3364390f-7082-4776-a6ae-a294a8dbafc1",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -2411,13 +2411,11 @@
 										},
 										{
 											"key": "tutorial_group",
-											"value": "92bec04f-81d2-46f7-9b78-3c724d305896",
-											"disabled": true
+											"value": "92bec04f-81d2-46f7-9b78-3c724d305896"
 										},
 										{
 											"key": "student",
-											"value": "d71bfdc0-79b5-48b7-a3e6-5697b574b45b",
-											"type": "text"
+											"value": "3364390f-7082-4776-a6ae-a294a8dbafc1"
 										}
 									]
 								}
