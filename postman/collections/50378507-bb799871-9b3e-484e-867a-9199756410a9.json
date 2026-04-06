@@ -451,7 +451,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"student\": \"\",\r\n    \"tutorial_group\": \"\",\r\n    \"student_attendance_session\": \"\",\r\n    \"tutorial_session\": \"\"\r\n}",
+									"raw": "[\r\n    {\r\n        \"evaluation_id\": \"\"\r\n    }\r\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -459,7 +459,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_tutorial_session/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_tutorial_session/batch-update/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -469,6 +469,7 @@
 										"gt",
 										"core",
 										"evaluation_tutorial_session",
+										"batch-update",
 										""
 									]
 								}
