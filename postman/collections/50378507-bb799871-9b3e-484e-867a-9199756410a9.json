@@ -387,7 +387,7 @@
 						},
 						{
 							"name": "evaluation",
-							"id": "50378507-bab575ed-bede-4a57-93d6-a155f2c3e522",
+							"id": "50378507-b1b3b9e1-9757-468a-9ef4-e8da1b836328",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -406,7 +406,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\r\n    {\r\n        \"evaluation_id\": \"aaa046cc-d9c5-4a37-9128-e2164d4e7b02\",\r\n        \"note_conceptual_map\": 8\r\n    }\r\n]",
+									"raw": "{\r\n    \"note_conceptual_map\": 9\r\n\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -414,7 +414,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_tutorial_session/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_tutorial_session/{{EVALUATION_ID}}/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -424,6 +424,7 @@
 										"gt",
 										"core",
 										"evaluation_tutorial_session",
+										"{{EVALUATION_ID}}",
 										""
 									]
 								}
@@ -515,52 +516,6 @@
 										"core",
 										"evaluation_tutorial_session",
 										"batch-update",
-										""
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "evaluation",
-							"id": "50378507-b1b3b9e1-9757-468a-9ef4-e8da1b836328",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{TOKEN1}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "PATCH",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"note_conceptual_map\": 9\r\n\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_tutorial_session/{{EVALUATION_ID}}/",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"api",
-										"v1",
-										"gt",
-										"core",
-										"evaluation_tutorial_session",
-										"{{EVALUATION_ID}}",
 										""
 									]
 								}
