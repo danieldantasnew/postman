@@ -3289,7 +3289,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/7e092bee-d3dc-4146-9799-044b34e815a4/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/{{TSA_ID}}/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3299,18 +3299,19 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"7e092bee-d3dc-4146-9799-044b34e815a4",
+										"{{TSA_ID}}",
 										""
 									],
 									"query": [
 										{
-											"key": "tutorial_group",
-											"value": "0a12ec32-f5e1-41f3-8b25-fbbb082b2cd4",
+											"key": "tutorial_session",
+											"value": "25c8d9e6-e104-4377-b84a-99fd80a34060",
 											"disabled": true
 										},
 										{
-											"key": "tutorial_session",
-											"value": "25c8d9e6-e104-4377-b84a-99fd80a34060",
+											"key": "tutorial_group",
+											"value": "0a12ec32-f5e1-41f3-8b25-fbbb082b2cd4",
+											"type": "text",
 											"disabled": true
 										}
 									]
@@ -3550,8 +3551,19 @@
 								},
 								"method": "PATCH",
 								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"uuid": "bb0d1bfe-a924-4cd9-953a-b6172296abf2"
+										}
+									]
+								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/7e092bee-d3dc-4146-9799-044b34e815a4/advance-stage/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/{{TSA_ID}}/advance-stage/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3561,7 +3573,7 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"7e092bee-d3dc-4146-9799-044b34e815a4",
+										"{{TSA_ID}}",
 										"advance-stage",
 										""
 									]
