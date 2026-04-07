@@ -3289,7 +3289,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/9b918dc3-7956-45b3-b759-73e920912fb8/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/d030eba4-715f-4358-88bc-65224fd3c56e/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3299,7 +3299,7 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"9b918dc3-7956-45b3-b759-73e920912fb8",
+										"d030eba4-715f-4358-88bc-65224fd3c56e",
 										""
 									],
 									"query": [
