@@ -497,7 +497,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\r\n    {\r\n        \"evaluation_id\": \"95347731-d5e3-491e-b6a5-ddbc340e517d\",\r\n        \"note_conceptual_map\": 8\r\n    },\r\n    {\r\n        \"evaluation_id\": \"6e5a2b2c-fd36-4bef-a994-8f98a1e89f55\",\r\n        \"note_conceptual_map\": 6\r\n    },\r\n    {\r\n        \"evaluation_id\": \"1bb2dfe8-146c-479d-8526-37aa32252c10\",\r\n        \"note_conceptual_map\": 10\r\n    }\r\n]",
+									"raw": "[\r\n    {\r\n        \"evaluation_id\": \"aaa046cc-d9c5-4a37-9128-e2164d4e7b02\",\r\n        \"note_skills_performance\": 7,\r\n        \"note_cognitive_performance\": 7,\r\n        \"note_attitudinal_performance\": 7\r\n    },\r\n    {\r\n        \"evaluation_id\": \"757f1cf1-2785-434a-9321-5e0c4e85e6c4\",\r\n        \"note_skills_performance\": 8,\r\n        \"note_cognitive_performance\": 8,\r\n        \"note_attitudinal_performance\": 7\r\n    },\r\n    {\r\n        \"evaluation_id\": \"3df6426a-c80a-42f9-9dd6-7f6c2c2b01ae\",\r\n        \"note_skills_performance\": 8,\r\n        \"note_cognitive_performance\": 9,\r\n        \"note_attitudinal_performance\": 7\r\n    },\r\n    {\r\n        \"evaluation_id\": \"cdb25402-86fb-49f6-befd-d2bd08fd1d7b\",\r\n        \"note_skills_performance\": 8,\r\n        \"note_cognitive_performance\": 6,\r\n        \"note_attitudinal_performance\": 7\r\n    },\r\n    {\r\n        \"evaluation_id\": \"d17e311b-231b-4cb4-9562-1602c20ba5c0\",\r\n        \"note_skills_performance\": 8,\r\n        \"note_cognitive_performance\": 7,\r\n        \"note_attitudinal_performance\": 7\r\n    },\r\n    {\r\n        \"evaluation_id\": \"d63dd4a7-c0f8-4be6-8bf7-e158d7c32237\",\r\n        \"note_skills_performance\": 8,\r\n        \"note_cognitive_performance\": 8,\r\n        \"note_attitudinal_performance\": 7\r\n    }\r\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3289,7 +3289,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/?tutorial_group=ae460e18-6686-440c-8a6d-b50bace1e38e",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/?tutorial_group=0a12ec32-f5e1-41f3-8b25-fbbb082b2cd4",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3304,7 +3304,7 @@
 									"query": [
 										{
 											"key": "tutorial_group",
-											"value": "ae460e18-6686-440c-8a6d-b50bace1e38e"
+											"value": "0a12ec32-f5e1-41f3-8b25-fbbb082b2cd4"
 										},
 										{
 											"key": "tutorial_session",
