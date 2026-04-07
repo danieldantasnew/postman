@@ -3505,7 +3505,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\r\n\r\n]",
+									"raw": "[\r\n    { \r\n        \"student\": \"b4368253-55d3-4a9f-8ca3-6c03ea51952c\",\r\n        \"is_present\": true\r\n    },\r\n    { \r\n        \"student\": \"97eae524-0738-42ef-aa6d-485003ff5be2\",\r\n        \"is_present\": true\r\n    },\r\n    { \r\n        \"student\": \"26cff64b-e2e9-445e-91d2-7597f9ecfae1\",\r\n        \"is_present\": false\r\n    }\r\n]",
 									"options": {
 										"raw": {
 											"language": "json"
