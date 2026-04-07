@@ -497,7 +497,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\r\n    {\r\n        \"evaluation_id\": \"e95af459-a2fe-4eb3-9d78-dbe58bb44c7d\",\r\n        \"note_conceptual_map\": 8\r\n    },\r\n    {\r\n        \"evaluation_id\": \"a1bd303f-38fc-4432-a335-8c05af04e3f3\",\r\n        \"note_conceptual_map\": 9\r\n    },\r\n    {\r\n        \"evaluation_id\": \"ad1bcb0c-74bb-4583-93ca-d1604ab8d672\",\r\n        \"note_conceptual_map\": 10\r\n    }\r\n]",
+									"raw": "[\r\n    {\r\n        \"evaluation_id\": \"e95af459-a2fe-4eb3-9d78-dbe58bb44c7d\",\r\n        \"note_skills_performance\": 7,\r\n        \"note_cognitive_performance\": 7,\r\n        \"note_attitudinal_performance\": 7\r\n    },\r\n    {\r\n        \"evaluation_id\": \"a1bd303f-38fc-4432-a335-8c05af04e3f3\",\r\n        \"note_skills_performance\": 8,\r\n        \"note_cognitive_performance\": 8,\r\n        \"note_attitudinal_performance\": 7\r\n    },\r\n    {\r\n        \"evaluation_id\": \"ad1bcb0c-74bb-4583-93ca-d1604ab8d672\",\r\n        \"note_skills_performance\": 8,\r\n        \"note_cognitive_performance\": 9,\r\n        \"note_attitudinal_performance\": 7\r\n    }\r\n]",
 									"options": {
 										"raw": {
 											"language": "json"
