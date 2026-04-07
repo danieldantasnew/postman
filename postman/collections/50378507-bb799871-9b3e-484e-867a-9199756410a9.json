@@ -6110,10 +6110,10 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "15c37495-4ef1-44ec-98d4-b558c1680d18",
+						"id": "9e3423dd-bbbd-493c-8df3-85349a2d2b4a",
 						"exec": [
 							"var data = pm.response.json();\r",
-							"pm.collectionVariables.set(\"TOKEN1\", data.access_token)\r",
+							"pm.collectionVariables.set(\"TOKEN\", data.access_token)\r",
 							"pm.collectionVariables.set(\"REFRESH_TOKEN\", data.refresh_token)\r",
 							""
 						],
@@ -6125,7 +6125,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "d9868258-8927-4504-9d9f-ae572ddf5d5b",
+						"id": "27d24b74-ca3a-412f-a84d-15634474b7be",
 						"exec": [
 							""
 						],
