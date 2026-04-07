@@ -3289,7 +3289,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/{{TSA_ID}}/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/?tutorial_group=0a12ec32-f5e1-41f3-8b25-fbbb082b2cd4&page=1",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3299,7 +3299,6 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"{{TSA_ID}}",
 										""
 									],
 									"query": [
@@ -3311,8 +3310,12 @@
 										{
 											"key": "tutorial_group",
 											"value": "0a12ec32-f5e1-41f3-8b25-fbbb082b2cd4",
-											"type": "text",
-											"disabled": true
+											"type": "text"
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"type": "text"
 										}
 									]
 								}
