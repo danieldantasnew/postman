@@ -3505,7 +3505,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\r\n    { \r\n        \"student\": \"bb186456-3da1-452c-934a-9595d86a4d61\",\r\n        \"is_present\": true\r\n    },\r\n    { \r\n        \"student\": \"034f8a60-3a27-45dd-a62a-646405b24899\",\r\n        \"is_present\": true\r\n    },\r\n    { \r\n        \"student\": \"5171a145-7f23-416d-b702-fde98bf1f756\",\r\n        \"is_present\": true\r\n    },\r\n    { \r\n        \"student\": \"408375e8-2174-430d-8eb7-372ca8916b36\",\r\n        \"is_present\": true\r\n    },\r\n    { \r\n        \"student\": \"adc4eaee-96af-4cdc-a634-99e0fe1c5c02\",\r\n        \"is_present\": true\r\n    },\r\n    { \r\n        \"student\": \"d71bfdc0-79b5-48b7-a3e6-5697b574b45b\",\r\n        \"is_present\": false\r\n    }\r\n]",
+									"raw": "[\r\n\r\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3513,7 +3513,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/3d924dc3-9983-43c8-ac84-c28341779b95/start_resolution/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/7e092bee-d3dc-4146-9799-044b34e815a4/start_resolution/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3523,7 +3523,7 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"3d924dc3-9983-43c8-ac84-c28341779b95",
+										"7e092bee-d3dc-4146-9799-044b34e815a4",
 										"start_resolution",
 										""
 									]
@@ -3551,7 +3551,7 @@
 								"method": "PATCH",
 								"header": [],
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/3d924dc3-9983-43c8-ac84-c28341779b95/advance-stage/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/7e092bee-d3dc-4146-9799-044b34e815a4/advance-stage/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3561,7 +3561,7 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"3d924dc3-9983-43c8-ac84-c28341779b95",
+										"7e092bee-d3dc-4146-9799-044b34e815a4",
 										"advance-stage",
 										""
 									]
