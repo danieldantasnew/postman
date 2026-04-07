@@ -3467,7 +3467,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/7e092bee-d3dc-4146-9799-044b34e815a4/start_analysis/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/{{TSA_ID}}/start_analysis/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3477,7 +3477,7 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"7e092bee-d3dc-4146-9799-044b34e815a4",
+										"{{TSA_ID}}",
 										"start_analysis",
 										""
 									]
