@@ -3289,7 +3289,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/?tutorial_group=0a12ec32-f5e1-41f3-8b25-fbbb082b2cd4&page=1",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/?tutorial_group=92bec04f-81d2-46f7-9b78-3c724d305896&page=1",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3309,13 +3309,11 @@
 										},
 										{
 											"key": "tutorial_group",
-											"value": "0a12ec32-f5e1-41f3-8b25-fbbb082b2cd4",
-											"type": "text"
+											"value": "92bec04f-81d2-46f7-9b78-3c724d305896"
 										},
 										{
 											"key": "page",
-											"value": "1",
-											"type": "text"
+											"value": "1"
 										}
 									]
 								}
