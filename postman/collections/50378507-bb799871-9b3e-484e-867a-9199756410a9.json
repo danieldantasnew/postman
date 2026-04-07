@@ -6113,7 +6113,7 @@
 						"id": "9e3423dd-bbbd-493c-8df3-85349a2d2b4a",
 						"exec": [
 							"var data = pm.response.json();\r",
-							"pm.collectionVariables.set(\"TOKEN\", data.access_token)\r",
+							"pm.collectionVariables.set(\"TOKEN1\", data.access_token)\r",
 							"pm.collectionVariables.set(\"REFRESH_TOKEN\", data.refresh_token)\r",
 							""
 						],
