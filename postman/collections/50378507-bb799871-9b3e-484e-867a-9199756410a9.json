@@ -2789,7 +2789,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_groups/92bec04f-81d2-46f7-9b78-3c724d305896/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_groups/{id}/active-tutorial-session-assignment/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -2799,7 +2799,8 @@
 										"gt",
 										"core",
 										"tutorial_groups",
-										"92bec04f-81d2-46f7-9b78-3c724d305896",
+										"{id}",
+										"active-tutorial-session-assignment",
 										""
 									],
 									"query": [
