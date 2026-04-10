@@ -2770,6 +2770,66 @@
 							"response": []
 						},
 						{
+							"name": "active tutorial session assignment",
+							"id": "50378507-4f352c73-9308-4025-abfa-ff6113cddb25",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_groups/92bec04f-81d2-46f7-9b78-3c724d305896/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"tutorial_groups",
+										"92bec04f-81d2-46f7-9b78-3c724d305896",
+										""
+									],
+									"query": [
+										{
+											"key": "course_class",
+											"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+											"disabled": true
+										},
+										{
+											"key": "student",
+											"value": "d9d8ec23-13ed-4d90-a425-76fb71147f7f",
+											"disabled": true
+										},
+										{
+											"key": "responsible_facilitator",
+											"value": "dcd8fb3d-1878-465f-8399-7a42c48d1daa",
+											"disabled": true
+										},
+										{
+											"key": "responsible_facilitator",
+											"value": "2ed93a05-a083-443d-bb30-5e01fe7746a5",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "tutorial group",
 							"event": [
 								{
