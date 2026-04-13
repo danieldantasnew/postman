@@ -1765,7 +1765,67 @@
 								},
 								{
 									"name": "abscence report",
-									"item": [],
+									"item": [
+										{
+											"name": "student-grade-report Copy",
+											"id": "50378507-cdbe67b7-4fb6-405d-8abb-e1c26c1c09e9",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN1}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/?course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"gt",
+														"core",
+														"reports",
+														"student_grade_report",
+														""
+													],
+													"query": [
+														{
+															"key": "note",
+															"value": "third",
+															"description": "first, second e third são opções",
+															"disabled": true
+														},
+														{
+															"key": "student",
+															"value": "3364390f-7082-4776-a6ae-a294a8dbafc1",
+															"disabled": true
+														},
+														{
+															"key": "course_class",
+															"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a"
+														},
+														{
+															"key": "course_class",
+															"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"response": []
+										}
+									],
 									"id": "50378507-f67cc7c9-7e94-4cd2-9f95-c8e94c4d8970"
 								}
 							],
