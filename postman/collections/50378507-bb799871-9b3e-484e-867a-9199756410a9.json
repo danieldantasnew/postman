@@ -1764,10 +1764,10 @@
 									"id": "50378507-cffa31e8-9dd0-45eb-911b-3f5a3930a2a9"
 								},
 								{
-									"name": "abscence report",
+									"name": "absence report",
 									"item": [
 										{
-											"name": "abscence-report",
+											"name": "absence-report",
 											"id": "50378507-cdbe67b7-4fb6-405d-8abb-e1c26c1c09e9",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
