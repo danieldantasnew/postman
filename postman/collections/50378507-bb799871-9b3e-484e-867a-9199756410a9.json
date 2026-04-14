@@ -1845,7 +1845,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/pdf/?course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/absence_report/pdf/?course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
 													"host": [
 														"{{BASE_URL}}"
 													],
@@ -1855,7 +1855,7 @@
 														"gt",
 														"core",
 														"reports",
-														"student_grade_report",
+														"absence_report",
 														"pdf",
 														""
 													],
