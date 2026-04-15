@@ -1897,6 +1897,12 @@
 														{
 															"key": "course_class",
 															"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a"
+														},
+														{
+															"key": "tutorial_group_number",
+															"value": "2",
+															"type": "text",
+															"disabled": true
 														}
 													]
 												}
