@@ -1910,7 +1910,7 @@
 											"response": []
 										},
 										{
-											"name": "student-grade-report XLSX Copy",
+											"name": "absence-report XLSX",
 											"id": "50378507-e85336ec-e1f2-4b32-b200-80c9b43360a0",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
@@ -2002,7 +2002,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/csv/?semester=2026.1&course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/absence_report/csv/?course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
 													"host": [
 														"{{BASE_URL}}"
 													],
@@ -2012,15 +2012,11 @@
 														"gt",
 														"core",
 														"reports",
-														"student_grade_report",
+														"absence_report",
 														"csv",
 														""
 													],
 													"query": [
-														{
-															"key": "semester",
-															"value": "2026.1"
-														},
 														{
 															"key": "page",
 															"value": "1",
