@@ -1786,7 +1786,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/absence_report/",
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/absence_report/?course_class=532f43e3-0ada-4981-b8a3-b3e55b1abee7",
 													"host": [
 														"{{BASE_URL}}"
 													],
@@ -1818,8 +1818,7 @@
 														},
 														{
 															"key": "course_class",
-															"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7",
-															"disabled": true
+															"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7"
 														},
 														{
 															"key": "student_name",
