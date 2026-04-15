@@ -1908,6 +1908,152 @@
 												}
 											},
 											"response": []
+										},
+										{
+											"name": "student-grade-report XLSX Copy",
+											"id": "50378507-e85336ec-e1f2-4b32-b200-80c9b43360a0",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN1}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/xlsx/?semester=2026.1&course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"gt",
+														"core",
+														"reports",
+														"student_grade_report",
+														"xlsx",
+														""
+													],
+													"query": [
+														{
+															"key": "semester",
+															"value": "2026.1"
+														},
+														{
+															"key": "page",
+															"value": "1",
+															"disabled": true
+														},
+														{
+															"key": "note",
+															"value": "first",
+															"description": "first, second e third são opções",
+															"disabled": true
+														},
+														{
+															"key": "course_class",
+															"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+															"description": "campo obrigatório"
+														},
+														{
+															"key": "course_class",
+															"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+															"description": "campo obrigatório",
+															"disabled": true
+														},
+														{
+															"key": "course_class",
+															"value": "d1114932-188b-45cc-9b47-1219cb507cb3",
+															"description": "campo obrigatório",
+															"type": "text",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "student-grade-report CSV Copy",
+											"id": "50378507-358ba542-46cf-475a-85cb-62a2623f3336",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN1}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/csv/?semester=2026.1&course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"gt",
+														"core",
+														"reports",
+														"student_grade_report",
+														"csv",
+														""
+													],
+													"query": [
+														{
+															"key": "semester",
+															"value": "2026.1"
+														},
+														{
+															"key": "page",
+															"value": "1",
+															"disabled": true
+														},
+														{
+															"key": "note",
+															"value": "first",
+															"description": "first, second e third são opções",
+															"disabled": true
+														},
+														{
+															"key": "course_class",
+															"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+															"description": "campo obrigatório"
+														},
+														{
+															"key": "course_class",
+															"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+															"description": "campo obrigatório",
+															"disabled": true
+														},
+														{
+															"key": "course_class",
+															"value": "d1114932-188b-45cc-9b47-1219cb507cb3",
+															"description": "campo obrigatório",
+															"type": "text",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"response": []
 										}
 									],
 									"id": "50378507-f67cc7c9-7e94-4cd2-9f95-c8e94c4d8970"
