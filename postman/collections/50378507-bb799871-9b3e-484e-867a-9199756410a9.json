@@ -1786,7 +1786,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/absence_report/?course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a&tutorial_group_number=1",
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/absence_report/?course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
 													"host": [
 														"{{BASE_URL}}"
 													],
@@ -1829,7 +1829,7 @@
 														{
 															"key": "tutorial_group_number",
 															"value": "1",
-															"type": "text"
+															"disabled": true
 														}
 													]
 												}
