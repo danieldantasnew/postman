@@ -1819,6 +1819,12 @@
 															"key": "course_class",
 															"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7",
 															"disabled": true
+														},
+														{
+															"key": "student_name",
+															"value": "A",
+															"type": "text",
+															"disabled": true
 														}
 													]
 												}
