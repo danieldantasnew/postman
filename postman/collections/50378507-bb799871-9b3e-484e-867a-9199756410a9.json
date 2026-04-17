@@ -3681,7 +3681,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/d030eba4-715f-4358-88bc-65224fd3c56e/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/tutorial_session_assignment/?tutorial_group=ae460e18-6686-440c-8a6d-b50bace1e38e",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -3691,14 +3691,12 @@
 										"gt",
 										"core",
 										"tutorial_session_assignment",
-										"d030eba4-715f-4358-88bc-65224fd3c56e",
 										""
 									],
 									"query": [
 										{
 											"key": "tutorial_group",
-											"value": "92bec04f-81d2-46f7-9b78-3c724d305896",
-											"disabled": true
+											"value": "ae460e18-6686-440c-8a6d-b50bace1e38e"
 										},
 										{
 											"key": "page",
