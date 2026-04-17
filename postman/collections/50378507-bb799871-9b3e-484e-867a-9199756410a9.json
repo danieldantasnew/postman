@@ -732,7 +732,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\r\n    {\r\n        \"evaluation\": \"2241a653-b508-481e-a1f9-76739a3e1de5\",\r\n        \"step_number\": 4,\r\n        \"student_time_step\": \"12\",\r\n        \"time_step\": \"120\",\r\n        \"clicks_warning\": 1,\r\n        \"clicks_dislike\": 0,\r\n        \"clicks_like\": 220,\r\n        \"clicks_heart\": 1,\r\n        \"clicks_star\": 6,\r\n        \"clicks_sun\": 8\r\n    },\r\n    {\r\n        \"evaluation\": \"574b65d4-dca8-4f99-a084-329c5ab11fa6\",\r\n        \"step_number\": 4,\r\n        \"student_time_step\": \"5\",\r\n        \"time_step\": \"5\",\r\n        \"clicks_warning\": 0,\r\n        \"clicks_dislike\": 2,\r\n        \"clicks_like\": 50,\r\n        \"clicks_heart\": 4,\r\n        \"clicks_star\": 32,\r\n        \"clicks_sun\": 100\r\n    },\r\n    {\r\n        \"evaluation\": \"9229d7c0-7479-4a63-a278-e596983af88d\",\r\n        \"step_number\": 4,\r\n        \"student_time_step\": \"4\",\r\n        \"time_step\": \"4\",\r\n        \"clicks_warning\": 20,\r\n        \"clicks_dislike\": 4,\r\n        \"clicks_like\": 10,\r\n        \"clicks_heart\": 7,\r\n        \"clicks_star\": 30,\r\n        \"clicks_sun\": 82\r\n    }\r\n]",
+									"raw": "[\r\n    {\r\n        \"id\": \"c2429e43-5ad7-434f-942a-9b6595e9b20c\",\r\n        \"student_time_step\": \"12\",\r\n        \"time_step\": \"120\",\r\n        \"clicks_warning\": 1,\r\n        \"clicks_dislike\": 0,\r\n        \"clicks_like\": 220,\r\n        \"clicks_heart\": 1,\r\n        \"clicks_star\": 6,\r\n        \"clicks_sun\": 8\r\n    },\r\n    {\r\n        \"id\": \"d1552f2c-e37e-40ae-be3b-49d42bb4d83d\",\r\n        \"student_time_step\": \"5\",\r\n        \"time_step\": \"5\",\r\n        \"clicks_warning\": 0,\r\n        \"clicks_dislike\": 2,\r\n        \"clicks_like\": 50,\r\n        \"clicks_heart\": 4,\r\n        \"clicks_star\": 32,\r\n        \"clicks_sun\": 100\r\n    },\r\n    {\r\n        \"evaluation\": \"1bd51c22-8cfe-49ca-a114-419055b3c768\",\r\n        \"student_time_step\": \"4\",\r\n        \"time_step\": \"4\",\r\n        \"clicks_warning\": 20,\r\n        \"clicks_dislike\": 4,\r\n        \"clicks_like\": 10,\r\n        \"clicks_heart\": 7,\r\n        \"clicks_star\": 30,\r\n        \"clicks_sun\": 82\r\n    }\r\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -740,7 +740,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_steps/batch-create/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_steps/batch-update/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -750,7 +750,7 @@
 										"gt",
 										"core",
 										"evaluation_steps",
-										"batch-create",
+										"batch-update",
 										""
 									]
 								}
