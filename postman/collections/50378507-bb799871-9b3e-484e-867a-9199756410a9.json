@@ -1554,7 +1554,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/?course_class=532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/?student=56744d83-bf45-4540-9dab-12d39877d0fb&course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
 													"host": [
 														"{{BASE_URL}}"
 													],
@@ -1576,17 +1576,22 @@
 														},
 														{
 															"key": "student",
+															"value": "56744d83-bf45-4540-9dab-12d39877d0fb",
+															"type": "text"
+														},
+														{
+															"key": "student",
 															"value": "3364390f-7082-4776-a6ae-a294a8dbafc1",
 															"disabled": true
 														},
 														{
 															"key": "course_class",
-															"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
-															"disabled": true
+															"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a"
 														},
 														{
 															"key": "course_class",
-															"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7"
+															"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+															"disabled": true
 														}
 													]
 												}
@@ -1613,7 +1618,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/pdf/?course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/pdf/?course_class=d1114932-188b-45cc-9b47-1219cb507cb3",
 													"host": [
 														"{{BASE_URL}}"
 													],
@@ -1643,8 +1648,7 @@
 															"key": "course_class",
 															"value": "d1114932-188b-45cc-9b47-1219cb507cb3",
 															"description": "campo obrigatório",
-															"type": "text",
-															"disabled": true
+															"type": "text"
 														},
 														{
 															"key": "semester",
@@ -1653,7 +1657,8 @@
 														},
 														{
 															"key": "course_class",
-															"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a"
+															"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+															"disabled": true
 														}
 													]
 												}
