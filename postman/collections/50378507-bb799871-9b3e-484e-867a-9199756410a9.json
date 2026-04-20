@@ -552,7 +552,7 @@
 									"raw": "{\r\n    \"is_present\": true\r\n}"
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_steps/?page=1",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/evaluation_steps/c2429e43-5ad7-434f-942a-9b6595e9b20c/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -562,13 +562,8 @@
 										"gt",
 										"core",
 										"evaluation_steps",
+										"c2429e43-5ad7-434f-942a-9b6595e9b20c",
 										""
-									],
-									"query": [
-										{
-											"key": "page",
-											"value": "1"
-										}
 									]
 								}
 							},
