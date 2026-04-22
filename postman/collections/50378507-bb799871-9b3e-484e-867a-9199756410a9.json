@@ -2102,8 +2102,21 @@
 							"id": "50378507-a1ad8589-ac82-410f-bcf3-43f167cc8c9a"
 						},
 						{
-							"name": "New Folder",
-							"item": [],
+							"name": "course_class",
+							"item": [
+								{
+									"name": "stats",
+									"id": "50378507-fde95bac-6ced-4a15-8bcc-1e93b91db90b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							],
 							"id": "50378507-524e2ff5-e765-49eb-bf3f-5810c0f143e9"
 						}
 					],
