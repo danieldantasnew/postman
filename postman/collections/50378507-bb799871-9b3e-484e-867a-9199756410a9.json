@@ -2110,8 +2110,35 @@
 										"disableBodyPruning": true
 									},
 									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{TOKEN1}}",
+													"type": "string"
+												}
+											]
+										},
 										"method": "GET",
-										"header": []
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/api/v1/gt/core/course_classes/stats/dde69ba9-dde8-4d0a-995e-4e0278b4fb2a/stats/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"gt",
+												"core",
+												"course_classes",
+												"stats",
+												"dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+												"stats",
+												""
+											]
+										}
 									},
 									"response": []
 								}
