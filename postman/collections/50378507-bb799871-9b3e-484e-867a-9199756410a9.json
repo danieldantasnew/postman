@@ -35,7 +35,7 @@
 									"urlencoded": []
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/medhub/core/course_class/d1114932-188b-45cc-9b47-1219cb507cb3/",
+									"raw": "{{BASE_URL}}/api/v1/medhub/core/course_class/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -45,7 +45,6 @@
 										"medhub",
 										"core",
 										"course_class",
-										"d1114932-188b-45cc-9b47-1219cb507cb3",
 										""
 									]
 								}
