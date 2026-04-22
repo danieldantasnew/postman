@@ -2123,7 +2123,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{BASE_URL}}/api/v1/gt/core/course_classes/dde69ba9-dde8-4d0a-995e-4e0278b4fb2a/stats/",
+											"raw": "{{BASE_URL}}/api/v1/gt/core/course_classes/{{course_class_id}}/stats/",
 											"host": [
 												"{{BASE_URL}}"
 											],
@@ -2133,9 +2133,35 @@
 												"gt",
 												"core",
 												"course_classes",
-												"dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+												"{{course_class_id}}",
 												"stats",
 												""
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": null,
+													"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": null,
+													"value": "d1114932-188b-45cc-9b47-1219cb507cb3",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": null,
+													"value": "124157ed-1e04-42d6-86f7-dcadcb16efc5",
+													"type": "text",
+													"disabled": true
+												}
 											]
 										}
 									},
