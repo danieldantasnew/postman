@@ -1555,7 +1555,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/?page=2",
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/?note=third&course_class=532f43e3-0ada-4981-b8a3-b3e55b1abee7&page=1",
 													"host": [
 														"{{BASE_URL}}"
 													],
@@ -1572,8 +1572,7 @@
 														{
 															"key": "note",
 															"value": "third",
-															"description": "first, second e third são opções",
-															"disabled": true
+															"description": "first, second e third são opções"
 														},
 														{
 															"key": "student",
@@ -1592,13 +1591,11 @@
 														},
 														{
 															"key": "course_class",
-															"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7",
-															"disabled": true
+															"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7"
 														},
 														{
 															"key": "page",
-															"value": "2",
-															"type": "text"
+															"value": "1"
 														}
 													]
 												}
