@@ -1555,7 +1555,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/?student=56744d83-bf45-4540-9dab-12d39877d0fb&course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/student_grade_report/",
 													"host": [
 														"{{BASE_URL}}"
 													],
@@ -1577,7 +1577,8 @@
 														},
 														{
 															"key": "student",
-															"value": "56744d83-bf45-4540-9dab-12d39877d0fb"
+															"value": "56744d83-bf45-4540-9dab-12d39877d0fb",
+															"disabled": true
 														},
 														{
 															"key": "student",
@@ -1586,7 +1587,8 @@
 														},
 														{
 															"key": "course_class",
-															"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a"
+															"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+															"disabled": true
 														},
 														{
 															"key": "course_class",
