@@ -1847,7 +1847,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/absence_report/?course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/absence_report/?course_class=cfa91b16-fbf4-45ea-9312-28b20f96b7b4",
 													"host": [
 														"{{BASE_URL}}"
 													],
@@ -1869,16 +1869,16 @@
 														},
 														{
 															"key": "student",
-															"value": "3364390f-7082-4776-a6ae-a294a8dbafc1",
+															"value": "f897963e-d35e-407c-8124-f840a560eb52",
 															"disabled": true
 														},
 														{
 															"key": "course_class",
-															"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a"
+															"value": "cfa91b16-fbf4-45ea-9312-28b20f96b7b4"
 														},
 														{
 															"key": "course_class",
-															"value": "532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+															"value": "e1eab526-f769-4ff8-9fcf-3d22a6daa9ef",
 															"disabled": true
 														},
 														{
