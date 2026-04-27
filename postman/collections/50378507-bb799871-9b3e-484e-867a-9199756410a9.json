@@ -2062,7 +2062,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/absence_report/csv/?course_class=e1eab526-f769-4ff8-9fcf-3d22a6daa9ef",
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/absence_report/csv/?course_class=f897963e-d35e-407c-8124-f840a560eb52",
 													"host": [
 														"{{BASE_URL}}"
 													],
@@ -2085,13 +2085,13 @@
 														{
 															"key": "course_class",
 															"value": "e1eab526-f769-4ff8-9fcf-3d22a6daa9ef",
-															"description": "campo obrigatório"
+															"description": "campo obrigatório",
+															"disabled": true
 														},
 														{
 															"key": "course_class",
 															"value": "f897963e-d35e-407c-8124-f840a560eb52",
-															"description": "campo obrigatório",
-															"disabled": true
+															"description": "campo obrigatório"
 														},
 														{
 															"key": "course_class",
