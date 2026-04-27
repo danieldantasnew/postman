@@ -1917,7 +1917,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/absence_report/pdf/?course_class=dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
+													"raw": "{{BASE_URL}}/api/v1/gt/core/reports/absence_report/pdf/?course_class=cfa91b16-fbf4-45ea-9312-28b20f96b7b4&course_class=e1eab526-f769-4ff8-9fcf-3d22a6daa9ef",
 													"host": [
 														"{{BASE_URL}}"
 													],
@@ -1944,20 +1944,25 @@
 															"disabled": true
 														},
 														{
-															"key": "course_class",
-															"value": "d1114932-188b-45cc-9b47-1219cb507cb3",
-															"description": "campo obrigatório",
-															"type": "text",
-															"disabled": true
-														},
-														{
 															"key": "semester",
 															"value": "2026.1",
 															"disabled": true
 														},
 														{
 															"key": "course_class",
-															"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a"
+															"value": "cfa91b16-fbf4-45ea-9312-28b20f96b7b4"
+														},
+														{
+															"key": "course_class",
+															"value": "f897963e-d35e-407c-8124-f840a560eb52",
+															"description": "campo obrigatório",
+															"type": "text",
+															"disabled": true
+														},
+														{
+															"key": "course_class",
+															"value": "e1eab526-f769-4ff8-9fcf-3d22a6daa9ef",
+															"type": "text"
 														},
 														{
 															"key": "tutorial_group_number",
