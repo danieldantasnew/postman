@@ -2428,8 +2428,7 @@
 									"urlencoded": [
 										{
 											"key": "course_class",
-											"value": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a",
-											"description": "dde69ba9-dde8-4d0a-995e-4e0278b4fb2a ; 532f43e3-0ada-4981-b8a3-b3e55b1abee7",
+											"value": "f897963e-d35e-407c-8124-f840a560eb52",
 											"type": "text",
 											"uuid": "a6d4701b-6d1a-4b6e-a9bf-c829888b6bc6"
 										},
@@ -2476,6 +2475,12 @@
 											"value": "third",
 											"type": "text",
 											"uuid": "4a66543e-1cee-4dc1-bc19-e3bcf32ce493"
+										},
+										{
+											"key": "student",
+											"value": "96fd062f-de03-4027-a271-5d3e12683ed2",
+											"type": "text",
+											"uuid": "9fbd79c7-cbe3-4f15-8b1e-67b146e199a3"
 										}
 									]
 								},
