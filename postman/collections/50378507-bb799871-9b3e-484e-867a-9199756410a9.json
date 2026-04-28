@@ -2566,8 +2566,7 @@
 											"key": "is_information_true",
 											"value": "true",
 											"type": "text",
-											"uuid": "43dd8047-bf13-4466-83c3-df60044f1825",
-											"disabled": true
+											"uuid": "43dd8047-bf13-4466-83c3-df60044f1825"
 										},
 										{
 											"key": "note",
