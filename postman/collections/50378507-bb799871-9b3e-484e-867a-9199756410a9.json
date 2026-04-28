@@ -2540,8 +2540,7 @@
 											"key": "target_sessions",
 											"value": "AV-11",
 											"type": "text",
-											"uuid": "db6d306f-f48b-4675-9c81-8464e038fef3",
-											"disabled": true
+											"uuid": "db6d306f-f48b-4675-9c81-8464e038fef3"
 										},
 										{
 											"key": "target_sessions",
@@ -2551,7 +2550,7 @@
 										},
 										{
 											"key": "target_sessions",
-											"value": "AV-7",
+											"value": "AV-8",
 											"type": "text",
 											"uuid": "5d4fe374-9cdd-4380-8bf7-661c24e86899",
 											"disabled": true
@@ -2579,6 +2578,20 @@
 											"value": "96fd062f-de03-4027-a271-5d3e12683ed2",
 											"type": "text",
 											"uuid": "9fbd79c7-cbe3-4f15-8b1e-67b146e199a3",
+											"disabled": true
+										},
+										{
+											"key": "reason_for_rejection",
+											"value": "asdasdasd",
+											"type": "text",
+											"uuid": "abc9cbf3-ee95-46d6-84a5-fd777311f873",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "review",
+											"type": "text",
+											"uuid": "4b7dc33f-c235-4184-94e7-bfcc9d691c04",
 											"disabled": true
 										}
 									]
@@ -2683,7 +2696,7 @@
 									]
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/request_replacement/4aaf45aa-8eea-4853-9032-e3c30d89b2f7/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/request_replacement/4aaf45aa-8eea-4853-9032-e3c30d89b2f7/start-review/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -2694,6 +2707,7 @@
 										"core",
 										"request_replacement",
 										"4aaf45aa-8eea-4853-9032-e3c30d89b2f7",
+										"start-review",
 										""
 									]
 								}
@@ -2782,7 +2796,7 @@
 									]
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/request_replacement/4aaf45aa-8eea-4853-9032-e3c30d89b2f7/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/request_replacement/4aaf45aa-8eea-4853-9032-e3c30d89b2f7/finish-review/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -2793,6 +2807,7 @@
 										"core",
 										"request_replacement",
 										"4aaf45aa-8eea-4853-9032-e3c30d89b2f7",
+										"finish-review",
 										""
 									]
 								}
