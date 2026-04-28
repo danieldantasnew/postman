@@ -2540,7 +2540,8 @@
 											"key": "target_sessions",
 											"value": "AV-11",
 											"type": "text",
-											"uuid": "db6d306f-f48b-4675-9c81-8464e038fef3"
+											"uuid": "db6d306f-f48b-4675-9c81-8464e038fef3",
+											"disabled": true
 										},
 										{
 											"key": "target_sessions",
@@ -2553,8 +2554,7 @@
 											"key": "target_sessions",
 											"value": "AV-7",
 											"type": "text",
-											"uuid": "5d4fe374-9cdd-4380-8bf7-661c24e86899",
-											"disabled": true
+											"uuid": "5d4fe374-9cdd-4380-8bf7-661c24e86899"
 										},
 										{
 											"key": "description",
@@ -2570,7 +2570,7 @@
 										},
 										{
 											"key": "note",
-											"value": "third",
+											"value": "second",
 											"type": "text",
 											"uuid": "4a66543e-1cee-4dc1-bc19-e3bcf32ce493"
 										},
