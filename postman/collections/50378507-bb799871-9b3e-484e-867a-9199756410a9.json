@@ -2480,7 +2480,8 @@
 											"key": "student",
 											"value": "96fd062f-de03-4027-a271-5d3e12683ed2",
 											"type": "text",
-											"uuid": "9fbd79c7-cbe3-4f15-8b1e-67b146e199a3"
+											"uuid": "9fbd79c7-cbe3-4f15-8b1e-67b146e199a3",
+											"disabled": true
 										}
 									]
 								},
