@@ -2600,6 +2600,105 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "start_review",
+							"id": "50378507-27dc7912-5d64-4817-943e-953965056dc5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN1}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "course_class",
+											"value": "f897963e-d35e-407c-8124-f840a560eb52",
+											"type": "text",
+											"uuid": "a6d4701b-6d1a-4b6e-a9bf-c829888b6bc6"
+										},
+										{
+											"key": "reason",
+											"value": "health",
+											"type": "text",
+											"uuid": "72f3f86d-c906-48ac-a074-f7698c790452"
+										},
+										{
+											"key": "target_sessions",
+											"value": "AV-11",
+											"type": "text",
+											"uuid": "db6d306f-f48b-4675-9c81-8464e038fef3",
+											"disabled": true
+										},
+										{
+											"key": "target_sessions",
+											"value": "AV-12",
+											"type": "text",
+											"uuid": "a1b88ab0-aecc-49ce-b398-29590233dac9"
+										},
+										{
+											"key": "target_sessions",
+											"value": "AV-7",
+											"type": "text",
+											"uuid": "5d4fe374-9cdd-4380-8bf7-661c24e86899",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "Assim mesmo, a complexidade dos estudos efetuados estimula a padronização do remanejamento dos quadros funcionais. Todavia, o fenômeno da Internet obstaculiza a apreciação da importância do investimento em reciclagem técnica. A prática cotidiana prova que a adoção de políticas descentralizadoras talvez venha a ressaltar a relatividade dos níveis de motivação departamental.",
+											"type": "text",
+											"uuid": "9b28d223-4dfc-47b4-8e46-746c4e153c7b"
+										},
+										{
+											"key": "is_information_true",
+											"value": "true",
+											"type": "text",
+											"uuid": "43dd8047-bf13-4466-83c3-df60044f1825"
+										},
+										{
+											"key": "note",
+											"value": "third",
+											"type": "text",
+											"uuid": "4a66543e-1cee-4dc1-bc19-e3bcf32ce493"
+										},
+										{
+											"key": "student",
+											"value": "96fd062f-de03-4027-a271-5d3e12683ed2",
+											"type": "text",
+											"uuid": "9fbd79c7-cbe3-4f15-8b1e-67b146e199a3",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/gt/core/request_replacement/4aaf45aa-8eea-4853-9032-e3c30d89b2f7/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"gt",
+										"core",
+										"request_replacement",
+										"4aaf45aa-8eea-4853-9032-e3c30d89b2f7",
+										""
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "50378507-508b9d08-7409-4091-9b0a-3576712099e2"
