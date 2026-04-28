@@ -2503,7 +2503,7 @@
 							"response": []
 						},
 						{
-							"name": "request replacement Copy",
+							"name": "request replacement",
 							"id": "50378507-046efae1-3b34-428a-8786-a36075171f4b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2519,7 +2519,7 @@
 										}
 									]
 								},
-								"method": "POST",
+								"method": "PATCH",
 								"header": [],
 								"body": {
 									"mode": "urlencoded",
@@ -2584,7 +2584,7 @@
 									]
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/api/v1/gt/core/request_replacement/",
+									"raw": "{{BASE_URL}}/api/v1/gt/core/request_replacement/4aaf45aa-8eea-4853-9032-e3c30d89b2f7/",
 									"host": [
 										"{{BASE_URL}}"
 									],
@@ -2594,6 +2594,7 @@
 										"gt",
 										"core",
 										"request_replacement",
+										"4aaf45aa-8eea-4853-9032-e3c30d89b2f7",
 										""
 									]
 								}
